@@ -5,6 +5,7 @@ import devfest from "./DEVF3ST.png";
 import { motion } from "framer-motion";
 import ParticleAnimation from "./components/ParticleAnimation";
 import FestNo from "./components/FestNo";
+import Timetable from "./components/Timetable";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       </Flex>
       <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
         <FestNo/>
+      </Flex>
+      <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"}>
+        <Timetable/>
       </Flex>
     </Flex>
   );
