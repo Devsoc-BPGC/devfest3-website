@@ -14,7 +14,7 @@ function Timetable() {
 
   return (
     <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center">
-    <Text flexGrow={1} padding="30px" width="100%" textAlign="start" textColor="white" fontSize="5rem" fontFamily="Megrim">TIMETABLE</Text>
+    <Text flexGrow={1} padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem",md:"3.5rem",lg:"4rem",xl:"4.5rem","2xl": "5em"}} fontFamily="Megrim">TIMETABLE</Text>
     <Flex height="80%" width="90%" justifyContent="space-between">
     <Box width="45%">
       <Daycard num="1" events={Day_Schedule[0]}/>
