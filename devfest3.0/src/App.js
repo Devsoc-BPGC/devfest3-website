@@ -9,6 +9,7 @@ import Timetable from "./components/Timetable";
 import Register from "./components/Register";
 import Prizes from "./components/Prizes";
 import Sponsorscard from "./components/Sponsorscard";
+import Speakers from "./components/Speakers";
 
 function App() {
   return (
@@ -33,9 +34,12 @@ function App() {
           <Prizes />
         </Flex>
         <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"}>
-        <Timetable/>
+          <Timetable />
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"}>
+        <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"}>
+          <Speakers />
+          </Flex>
+          <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"}>
           <Sponsorscard/>
         </Flex>
     </Flex>
