@@ -25,6 +25,7 @@ function App() {
     }
 }, []);
 
+
   return (
     <ChakraProvider>
       <Flex direction="column" minH={"100%"} bgImage={bgImg} bgPosition={"center"} bgColor={"black"} scrollBehavior={true}>
@@ -40,10 +41,14 @@ function App() {
             <Image src={devfest} height={{xl:200,md:150,sm:100,base:50}} />
             <Wrap height="3.5rem" width={"100%"} justify='space-evenly' spacing='30px'>
               <WrapItem>
-              <Button variant={"link"} backgroundColor={"#3770FF"} width={"15rem"}>
-              <Image height={"80%"} src={dv}></Image>
-      <Text color={"white"}>Register for Hackathon</Text>
-              </Button>
+              <div 
+      id="apply-button" 
+      className="apply-button" 
+      data-hackathon-slug="devfest-3" 
+      data-button-theme="light"
+	    style={{height: "3rem",width: "15rem"}}
+    >
+              </div>
               </WrapItem>
               <WrapItem>
                 <Link href={"https://forms.gle/8hTpsxaBWHphR3JfA"}>
