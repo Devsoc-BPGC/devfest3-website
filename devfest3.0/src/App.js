@@ -8,6 +8,7 @@ import FestNo from "./components/FestNo";
 import Timetable from "./components/Timetable";
 import Register from "./components/Register";
 import Prizes from "./components/Prizes";
+import Sponsorscard from "./components/Sponsorscard";
 
 function App() {
   return (
@@ -33,7 +34,10 @@ function App() {
         </Flex>
         <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"}>
         <Timetable/>
-      </Flex>
+        </Flex>
+        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"}>
+          <Sponsorscard/>
+        </Flex>
     </Flex>
     </ChakraProvider>
   );
