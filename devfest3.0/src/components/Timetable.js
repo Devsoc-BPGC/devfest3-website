@@ -1,8 +1,8 @@
 import React from 'react'
-import { Text,Table,Flex,Box, Divider } from '@chakra-ui/react';
+import { Text,Flex,Box } from '@chakra-ui/react';
 import Daycard from './Daycard';
 import Timecard from './Timecard';
-function Timetable() {
+const Timetable = () => {
     function DevfestEvent(name, time, venue) {
         this.name = name;
         this.time = time;

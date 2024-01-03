@@ -1,7 +1,6 @@
 import { Box, Flex, Image, Text, Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import speaker1 from "./Kunal Kushwaha.png";
-
 const Speakers = () => {
   return (
     <>

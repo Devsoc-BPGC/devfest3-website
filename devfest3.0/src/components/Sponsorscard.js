@@ -3,7 +3,7 @@ import polygon from './polygon.png'
 import replit from './replit.png'
 import { Box,Text,Wrap,WrapItem } from '@chakra-ui/react'
 import devfolio from './devfolio.png'
-function Sponsorscard() {
+const Sponsorscard = () => {
   return (
     <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center">
     <Text padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem",md:"3.5rem",lg:"4rem",xl:"4.5rem","2xl": "5em"}} fontFamily="Megrim">SPONSOR</Text>
