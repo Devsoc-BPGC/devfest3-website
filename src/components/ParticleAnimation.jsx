@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import bgImg from "../StarBg.png";
+import { motion } from "framer-motion";
 
 const ParticleAnimation = () => {
   const [init, setInit] = useState(false);
@@ -18,71 +18,11 @@ const ParticleAnimation = () => {
     console.log(container);
   };
 
-  //   const options = useMemo(
-  //     () => ({
-  //       background: {
-  //         image: `url(${bgImg})`,
-  //       },
-  //       particles: {
-  //         number: {
-  //           value: 200,
-  //         },
-  //         color: {
-  //           value: "#ffffff",
-  //         },
-  //         life: {
-  //           count: 1,
-  //           duration: {
-  //             value: 10,
-  //           },
-  //         },
-  //         shape: {
-  //           type: "circle",
-  //         },
-  //         opacity: {
-  //           value: 1,
-  //         },
-  //         size: {
-  //           value: 3,
-  //         },
-  //         move: {
-  //           enable: true,
-  //           speed: 4,
-  //           decay: 0.005,
-  //           direction: "outside",
-  //           straight: true,
-  //           outModes: "destroy",
-  //           trail: {
-  //             enable: true,
-  //             length: 100,
-  //             fill: {
-  //               color: "#000000",
-  //             },
-  //           },
-  //         },
-  //       },
-  //       emitters: {
-  //         position: {
-  //           x: 50,
-  //           y: 50,
-  //         },
-  //         size: {
-  //           width: 100,
-  //           height: 100,
-  //         },
-  //         rate: {
-  //           quantity: 500,
-  //           delay: 0.05,
-  //         },
-  //       },
-  //     }),
-  //     []
-  //   );
-
   const options = useMemo(
     () => ({
       background: {
-        image: `url(${bgImg})`,
+        // image: `url(${bgImg})`,
+        color: "#000000",
       },
       particles: {
         number: {
@@ -126,8 +66,83 @@ const ParticleAnimation = () => {
     []
   );
 
+  const options2 = useMemo(
+    () => ({
+      particles: {
+        background: {
+          color: "#000000",
+        },
+        number: {
+          value: 100,
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 0,
+            color: "#000000",
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      retina_detect: true,
+    }),
+    []
+  );
+
   if (init) {
-    return <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />;
+    return (
+      <>
+        <motion.div style={{ opacity: 1 }} animate={{ opacity: 0, transition: { duration: 4 } }}>
+          <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
+        </motion.div>
+        <motion.div style={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 3, duration: 1 } }}>
+          <Particles id="tsparticles2" particlesLoaded={particlesLoaded} options={options2} />
+        </motion.div>
+      </>
+    );
   }
 
   return <></>;

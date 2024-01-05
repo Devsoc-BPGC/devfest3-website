@@ -1,6 +1,5 @@
 import { ChakraProvider, Flex, Image, Button, Text, Wrap, WrapItem, Link, Divider } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
-import bgImg from "./StarBg.png";
 import devfest from "./DEVF3ST.png";
 import { motion } from "framer-motion";
 import ParticleAnimation from "./components/ParticleAnimation";
@@ -31,10 +30,8 @@ function App() {
   const eventsRef = useRef(null);
   return (
     <ChakraProvider>
-      <Flex direction="column" minH={"100%"} bgImage={bgImg} bgPosition={"center"} bgColor={"black"} scrollBehavior={true}>
-        <motion.div style={{ opacity: 1 }} animate={{ opacity: 0, transition: { duration: 8 } }}>
-          <ParticleAnimation />
-        </motion.div>
+      <Flex direction="column" minH={"100%"} bgPosition={"center"} bgColor={"black"} scrollBehavior={true}>
+        <ParticleAnimation />
         <motion.div style={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.5, delay: 3 } }}>
           <NavBar sponsRef={sponsRef} speakersRef={speakersRef} merchRef={merchRef} eventsRef={eventsRef} />
         </motion.div>
