@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import jacket from "./components/Jacket.png";
 import { useRef } from "react";
 import Events from "./components/Events";
+import About from "./components/About";
 function App() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -24,18 +25,22 @@ function App() {
       document.body.removeChild(script);
     };
   }, []);
-  const sponsRef = useRef(null);
-  const speakersRef = useRef(null);
-  const merchRef = useRef(null);
+  const aboutRef = useRef(null);
   const eventsRef = useRef(null);
+  const timelineRef = useRef(null);
+  const prizesRef = useRef(null);
+  const sponsorsRef = useRef(null);
+  const teamRef = useRef(null);
+  const faqRef = useRef(null);
+
   return (
     <ChakraProvider>
       <Flex direction="column" minH={"100%"} bgPosition={"center"} bgColor={"black"} scrollBehavior={true}>
         <ParticleAnimation />
         <motion.div style={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.5, delay: 3 } }}>
-          <NavBar sponsRef={sponsRef} speakersRef={speakersRef} merchRef={merchRef} eventsRef={eventsRef} />
+          <NavBar aboutRef={aboutRef} eventsRef={eventsRef} timelineRef={timelineRef} prizesRef={prizesRef} sponsorsRef={sponsorsRef} teamRef={teamRef} faqRef={faqRef} />
         </motion.div>
-        <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"} ref={merchRef}>
+        <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
           <motion.div style={{ opacity: 0, height: "100%", width: "100%" }} animate={{ opacity: 1, transition: { duration: 1, delay: 4 } }}>
             <Flex flexDir={"column"} alignItems={"center"} justifyContent={"space-evenly"} height={"100%"} width={"100%"}>
               <Image src={devfest} height={{ xl: 200, md: 150, sm: 100, base: 50 }} />
@@ -60,33 +65,36 @@ function App() {
         <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
           <FestNo />
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"} ref={eventsRef}>
+        <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"} ref={timelineRef}>
           <Timetable />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"}>
+        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} ref={prizesRef}>
           <Register />
           <Prizes />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"} direction={"column"}>
+        <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"} direction={"column"} ref={eventsRef}>
           <Events />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"} ref={speakersRef}>
+        <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"}>
           <Speakers />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} id={"sponsors"} ref={sponsRef}>
+        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} id={"sponsors"} ref={sponsorsRef}>
           <Sponsorscard />
+        </Flex>
+        <Flex alignItems={"center"} justifyContent={"start"} direction={"column"} ref={aboutRef}>
+          <About />
         </Flex>
       </Flex>
     </ChakraProvider>
