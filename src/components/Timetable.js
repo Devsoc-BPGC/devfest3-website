@@ -13,13 +13,13 @@ const Timetable = () => {
   // [new DevfestEvent("Workshop","11:00-1:00","Auditorium"),new DevfestEvent("Hackathon Result","2:00 onwards","Completion"),new DevfestEvent("Game Jam Result","2:00 onwards","Completion")]]
 
   const Day_Schedule = [
-    [new DevfestEvent("Hackathon Starts", "10 PM onwards", "TBD"), new DevfestEvent("GameJam Starts", "10 PM onwards", "TBD")],
+    [new DevfestEvent("Hackathon Starts", "11 PM onwards", "TBD"), new DevfestEvent("GameJam Starts", "11 PM onwards", "TBD")],
     [new DevfestEvent("CodeGolf starts", "2 PM onwards", "Online"), new DevfestEvent("Guest Speaker", "7 PM - 9 PM", "TBD")],
     [
       new DevfestEvent("Workshop Starts", "10 AM - 1 PM", "TBD"),
       new DevfestEvent("Workshop Continued", "2 PM - 5 PM", "TBD"),
-      new DevfestEvent("Hackathon Ends", "10 PM"),
-      new DevfestEvent("GameJam Ends", "10 PM"),
+      new DevfestEvent("Hackathon Ends", "11 PM"),
+      new DevfestEvent("GameJam Ends", "11 PM"),
     ],
   ];
 
