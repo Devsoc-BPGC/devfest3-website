@@ -8,7 +8,7 @@ import Timetable from "./components/Timetable";
 import Register from "./components/Register";
 import Prizes from "./components/Prizes";
 import Sponsorscard from "./components/Sponsorscard";
-import Speakers from "./components/Speakers";
+// import Speakers from "./components/Speakers";
 import { useEffect } from "react";
 import jacket from "./components/Jacket.png";
 import { useRef } from "react";
@@ -84,12 +84,12 @@ function App() {
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"}>
+        {/* <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"}>
           <Speakers />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
-        </Flex>
+        </Flex> */}
         <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} id={"sponsors"} ref={sponsorsRef}>
           <Sponsorscard />
         </Flex>
