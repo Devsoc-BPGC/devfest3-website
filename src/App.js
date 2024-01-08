@@ -93,6 +93,9 @@ function App() {
         <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} id={"sponsors"} ref={sponsorsRef}>
           <Sponsorscard />
         </Flex>
+        <Flex width={"100%"} justifyContent={"center"}>
+          <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
+        </Flex>
         <Flex alignItems={"center"} justifyContent={"start"} direction={"column"} ref={aboutRef}>
           <About />
         </Flex>

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 function Timecard(props) {
   return (
-    <Box display="flex" flexDir="row" width="100%" marginBottom="4.5rem" paddingLeft={"3%"}>
+    <Box display="flex" flexDir="row" width="100%" marginBottom="5.7rem" paddingLeft={"3%"}>
       <Box display="flex" flexDir="column" height="100%" width="100%" justifyContent="space-between" alignItems="center">
         {props.events.map((item, index) => {
           return (
