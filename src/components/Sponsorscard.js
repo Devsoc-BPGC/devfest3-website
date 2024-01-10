@@ -3,6 +3,7 @@ import polygon from './polygon.png'
 import replit from './replit.png'
 import { Box,Text,Wrap,WrapItem } from '@chakra-ui/react'
 import devfolio from './devfolio.png'
+import outscal from './outscal_logo.jpg'
 const Sponsorscard = () => {
   return (
     <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center">
@@ -20,6 +21,9 @@ const Sponsorscard = () => {
             </WrapItem>
             <WrapItem margin="10px">
             <img src={polygon} alt="POLYGON LOGO" />
+            </WrapItem>
+            <WrapItem margin="10px">
+            <img src={outscal} alt="OUTSCAL LOGO" />
             </WrapItem>
             </Wrap>
           </div>
