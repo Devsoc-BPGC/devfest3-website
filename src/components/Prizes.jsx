@@ -1,40 +1,117 @@
-import { Container, Flex, Text,Image,Link } from "@chakra-ui/react";
-import echo3d from './echo3D.png'
+import { Container, Flex, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+
 const WinnerCard = (props) => {
   return (
-    <Container paddingBottom={"10px"} bgColor={"rgba(256,256,256,0.15)"} borderRadius={"16px"} backdropFilter={"blur(1px)"} width={{ base: "50%", sm: "25%", lg: "15%" }} textAlign={"center"} m={"1%"}>
-      <Text margin={"5px"} fontFamily={"Epilogue"} fontWeight={800} color={"white"} paddingTop={"5%"}>
+    <Container
+      bgColor={"rgba(256,256,256,0.15)"}
+      borderRadius={"16px"}
+      backdropFilter={"blur(1px)"}
+      height={"80%"}
+      width={{ base: "50%", sm: "25%", lg: "20%" }}
+      textAlign={"center"}
+      m={"1%"}
+      p={"1%"}
+    >
+      <Text fontFamily={"Epilogue"} fontWeight={800} color={"white"} fontSize={"xl"} paddingBottom={"2%"}>
         {props.title}
-        </Text>
-        <Image margin={"5px"} src={props.img}></Image>
-        <Text margin={"5px"}color={"white"}>{props.disc}</Text>
-        { (props.formLink!=null) ?
-        <Link fontWeight={"800"} margin={"5px"} color={"#ADD8E6"} href={props.formLink}>Register Here</Link>
-        : <></>
-      }
+      </Text>
+      <Text color={"white"} textAlign={"left"}>
+        <UnorderedList>
+          {props.prizes.map((item, i) => (
+            <ListItem key={i}>{item}</ListItem>
+          ))}
+        </UnorderedList>
+      </Text>
     </Container>
+  );
+};
+
+const GameJamPrizes = () => {
+  return (
+    <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
+      <Text fontFamily={"Megrim"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
+        GameJam Prizes
+      </Text>
+      <Flex flex={2} width={"100%"} direction={"column"}>
+        <Flex width={"100%"} height={"100%"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+          <WinnerCard
+            title="Winner"
+            prizes={[
+              "Cash Prize",
+              "Free passes for the IGDC Flagship event later this year",
+              "1-month FREE access to Pro tier of echo3D (worth $99)",
+              "Free access to courses worth Rs. 1000 from Outscal",
+              "Certificate of Excellence",
+            ]}
+          />
+          <WinnerCard
+            title="First Runner Up"
+            prizes={[
+              "Cash Prize",
+              "Free passes for the IGDC Flagship event later this year",
+              "1-month FREE access to Pro tier of echo3D (worth $99)",
+              "Free access to courses worth Rs. 1000 from Outscal",
+              "Certificate of Excellence",
+            ]}
+          />
+          <WinnerCard
+            title="Second Runner Up"
+            prizes={[
+              "Cash Prize",
+              "Free passes for the IGDC Flagship event later this year",
+              "1-month FREE access to Pro tier of echo3D (worth $99)",
+              "Free access to courses worth Rs. 1000 from Outscal",
+              "Certificate of Excellence",
+            ]}
+          />
+        </Flex>
+        <Flex width={"100%"} height={"100%"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+          <WinnerCard title="Top 25 Team" prizes={["1-month FREE access to Pro tier of echo3D (worth $99)", "Free access to courses worth Rs. 1000 from Outscal", "Certificate of Appreciation"]} />
+          <WinnerCard title="All Participants" prizes={["Free access to courses worth Rs. 1000 from Outscal", "Certificate of Participation"]} />
+        </Flex>
+      </Flex>
+      <Flex></Flex>
+    </Flex>
+  );
+};
+
+const HackathonPrizes = () => {
+  return (
+    <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
+      <Text fontFamily={"Megrim"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
+        Hackathon Prizes
+      </Text>
+      <Flex flex={2} width={"100%"} direction={"column"}>
+        <Flex width={"100%"} height={"100%"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+          <WinnerCard
+            title="Winner"
+            prizes={["Cash Prize", "1-month FREE access to Pro tier of echo3D (worth $99)", "100% off voucher worth Rs. 1100 from Interview Buddy", "Certificate of Excellence"]}
+          />
+          <WinnerCard
+            title="First Runner Up"
+            prizes={["Cash Prize", "1-month FREE access to Pro tier of echo3D (worth $99)", "100% off voucher worth Rs. 1100 from Interview Buddy", "Certificate of Excellence"]}
+          />
+          <WinnerCard
+            title="Second Runner Up"
+            prizes={["Cash Prize", "1-month FREE access to Pro tier of echo3D (worth $99)", "100% off voucher worth Rs. 1100 from Interview Buddy", "Certificate of Excellence"]}
+          />
+        </Flex>
+        <Flex width={"100%"} height={"100%"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+          <WinnerCard title="Top 25 Team" prizes={["1-month FREE access to Pro tier of echo3D (worth $99)", "90% off voucher from Interview Buddy", "Certificate of Appreciation"]} />
+          <WinnerCard title="All Participants" prizes={["1-month FREE access to Pro tier of echo3D (worth $99)", "90% off voucher from Interview Buddy", "Certificate of Participation"]} />
+        </Flex>
+      </Flex>
+      <Flex></Flex>
+    </Flex>
   );
 };
 
 const Prizes = () => {
   return (
-    <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
-      <Text fontFamily={"Megrim"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
-        Prizes
-      </Text>
-      <Flex flex={2} width={"100%"} direction={"column"}>
-        <Flex width={"100%"} height={"100%"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
-          <WinnerCard title="echo3D" img={echo3d} disc={"echo3D a 3D asset management platform that enables developers to manage, update, and stream 3D content to real-time apps and games. For 1-month FREE access to echo3D Pro tier, register here: "} formLink={"https://console.echo3d.com/#/auth/register-promo?code=Jan2024echo925"} />
-          <WinnerCard title="First Runner Up" />
-          <WinnerCard title="Second Runner Up" />
-        </Flex>
-        <Flex width={"100%"} height={"100%"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
-          <WinnerCard title="Top 25 Team" />
-          <WinnerCard title="All Participants" />
-        </Flex>
-      </Flex>
-      <Flex></Flex>
-    </Flex>
+    <>
+      <HackathonPrizes />
+      <GameJamPrizes />
+    </>
   );
 };
 

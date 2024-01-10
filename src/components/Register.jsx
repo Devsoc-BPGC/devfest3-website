@@ -15,7 +15,7 @@ const Register = () => {
       justifyContent={"space-between"}
       marginTop={"3%"}
     >
-      <Image objectFit={"cover"} maxH={{ base: "40%", xl: "70%" }} src={hackathon_img} paddingRight={{ xl: "5%" }} paddingTop={{ base: "5%", xl: "0%" }} />
+      <Image objectFit={"cover"} height={{ base: "100px", sm: "150px", lg: "200px" }} src={hackathon_img} p={"2%"} />
       <Flex direction={"column"} justifyContent={"center"} height={"100%"}>
         <Text fontSize={{ base: "lg", md: "xl", xl: "2xl" }} p={"3%"} fontWeight={800} maxW={"80%"} paddingLeft={"10%"} fontFamily={"Didact Gothic"}>
           Register for the workshops and the hackathon
