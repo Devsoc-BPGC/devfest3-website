@@ -35,7 +35,7 @@ function App() {
 
   return (
     <ChakraProvider>
-      <Flex direction="column" minH={"100%"} bgPosition={"center"} bgColor={"black"} scrollBehavior={true}>
+      <Flex direction="column" minH={"100%"} bgPosition={"center"} bgColor={"black"} scrollBehavior={true} overflowX={"hidden"}>
         <ParticleAnimation />
         <motion.div style={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.5, delay: 3 } }}>
           <NavBar aboutRef={aboutRef} eventsRef={eventsRef} timelineRef={timelineRef} prizesRef={prizesRef} sponsorsRef={sponsorsRef} teamRef={teamRef} faqRef={faqRef} />
@@ -84,12 +84,6 @@ function App() {
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        {/* <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"}>
-          <Speakers />
-        </Flex>
-        <Flex width={"100%"} justifyContent={"center"}>
-          <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
-        </Flex> */}
         <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} id={"sponsors"} ref={sponsorsRef}>
           <Sponsorscard />
         </Flex>
