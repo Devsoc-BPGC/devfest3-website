@@ -14,6 +14,8 @@ import jacket from "./components/Jacket.png";
 import { useRef } from "react";
 import Events from "./components/Events";
 import About from "./components/About";
+import FAQs from "./components/FAQ";
+import Team from "./components/Team";
 function App() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -92,6 +94,18 @@ function App() {
         </Flex>
         <Flex alignItems={"center"} justifyContent={"start"} direction={"column"} ref={aboutRef}>
           <About />
+        </Flex>
+        <Flex width={"100%"} justifyContent={"center"}>
+          <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
+        </Flex>
+        <Flex ref={teamRef}>
+          <Team />
+        </Flex>
+        <Flex width={"100%"} justifyContent={"center"}>
+          <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
+        </Flex>
+        <Flex direction={"column"} ref={faqRef}>
+          <FAQs />
         </Flex>
       </Flex>
     </ChakraProvider>
