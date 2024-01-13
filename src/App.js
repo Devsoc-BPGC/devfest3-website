@@ -107,6 +107,12 @@ function App() {
         <Flex direction={"column"} ref={faqRef}>
           <FAQs />
         </Flex>
+        <footer style={{ color: "white", fontSize: "1rem", backgroundColor: "black", textAlign: "center" }}>
+          Made with ❤️ by{" "}
+          <a href="https://devsoc.club" style={{ color: "#ADD8E6" }}>
+            DevSoc
+          </a>
+        </footer>
       </Flex>
     </ChakraProvider>
   );
