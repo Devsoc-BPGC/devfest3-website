@@ -16,6 +16,7 @@ import Events from "./components/Events";
 import About from "./components/About";
 import FAQs from "./components/FAQ";
 import Team from "./components/Team";
+import Cordinators from "./components/Cordinators";
 function App() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -100,6 +101,9 @@ function App() {
         </Flex>
         <Flex ref={teamRef}>
           <Team />
+        </Flex>
+        <Flex >
+         <Cordinators />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
