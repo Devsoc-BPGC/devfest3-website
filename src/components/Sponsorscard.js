@@ -30,10 +30,10 @@ const Sponsorscard = () => {
             </WrapItem>
             </Wrap>
             <Wrap justify={'space-evenly'}>
-            <WrapItem margin="10px" width={'25%'}>
-            <img src={interviewbuddy} alt="INTERVIEWBUDDY LOGO"/>
+            <WrapItem margin="10px" width={{base: "100%", sm: "50%", md:'25%'}} paddingLeft={{base: '10%', sm: "0"}} paddingRight={{base: '10%', sm: "0"}}>
+            <img src={interviewbuddy} alt="INTERVIEWBUDDY LOGO" />
             </WrapItem>
-            <WrapItem margin="10px" width={'25%'} alignItems={'center'}>
+            <WrapItem margin="10px" width={{base: "100%", sm: "50%", md:'25%'}} paddingLeft={{base: '10%', sm: "0"}} paddingRight={{base: '10%', sm: "0"}} alignItems={'center'}>
             <img src={echo3D} alt="ECHO3D LOGO"/>
             </WrapItem>
             </Wrap>
