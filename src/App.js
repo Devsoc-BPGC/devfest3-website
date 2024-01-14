@@ -102,7 +102,7 @@ function App() {
         <Flex ref={teamRef}>
           <Team />
         </Flex>
-        <Flex >
+        <Flex minH={"100vh"}>
          <Cordinators />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
