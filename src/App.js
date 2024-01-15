@@ -52,8 +52,8 @@ function App() {
                   <div id="apply-button" className="apply-button" data-hackathon-slug="devfest-3" data-button-theme="light" style={{ height: "3rem", width: "15rem" }}></div>
                 </WrapItem>
                 <WrapItem>
-                  <Link href={"https://forms.gle/8hTpsxaBWHphR3JfA"}>
-                    <Button width={"15rem"}>
+                  <Link href={"https://forms.gle/8hTpsxaBWHphR3JfA"} w={"18rem"}>
+                    <Button>
                       <Text fontFamily={"McLaren"} margin={"5px"}>
                         Merchandise
                       </Text>
