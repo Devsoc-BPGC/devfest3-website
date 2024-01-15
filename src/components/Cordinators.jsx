@@ -24,7 +24,7 @@ function CordiCard({ img, name, position }) {
       p={"3%"}
     >
       <Image height={"75%"} src={img} marginTop={"10px"} p={"1%"}></Image>
-      <Text color={"white"} paddingStart={"1rem"} fontSize={"1.5rem"} p={"1%"}>
+      <Text color={"white"} paddingStart={"1rem"} fontSize={"1.5rem"} p={"1%"} fontFamily={"Didact Gothic"}>
         <b>{name}</b>
       </Text>
       <Text margin={"5px"} color={"#00a3ff"} paddingStart={"1rem"} fontSize={"1rem"} p={"1%"}>
