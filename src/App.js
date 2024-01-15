@@ -53,7 +53,7 @@ function App() {
                 </WrapItem>
                 <WrapItem>
                   <Link href={"https://forms.gle/8hTpsxaBWHphR3JfA"}>
-                    <Button width={"12rem"}>
+                    <Button width={"15rem"}>
                       <Text fontFamily={"McLaren"} margin={"5px"}>
                         Merchandise
                       </Text>
