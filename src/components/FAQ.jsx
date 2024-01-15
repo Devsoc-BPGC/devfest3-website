@@ -1,15 +1,26 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text,  Accordion,
+ AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon, } from "@chakra-ui/react";
 
 const FAQ = (props) => {
   return (
+    <AccordionItem>
     <Flex direction={"column"} color={"white"} m={"2%"}>
+      <AccordionButton>
       <Text fontSize={"3xl"} fontWeight={600} fontFamily={"Didact Gothic"}>
         {props.question}
       </Text>
+      <AccordionIcon />
+      </AccordionButton>
+      <AccordionPanel pb={4}>
       <Text fontSize={"xl"} fontFamily={"Didact Gothic"}>
         {props.answer}
       </Text>
+      </AccordionPanel>
     </Flex>
+    </AccordionItem>
   );
 };
 
@@ -43,9 +54,11 @@ const FAQs = () => {
       <Text fontFamily={"Megrim"} fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} color={"white"} width={"100%"}>
         FAQs
       </Text>
+      <Accordion defaultIndex={[0]} allowMultiple>
       {questions.map((item, i) => (
         <FAQ question={item} answer={answers[i]} />
       ))}
+      </Accordion>
       ;
     </Flex>
   );
