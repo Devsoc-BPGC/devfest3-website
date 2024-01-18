@@ -1,4 +1,4 @@
-import { Wrap, WrapItem, Text, Flex, Image, Box, useMediaQuery } from "@chakra-ui/react";
+import { Wrap, WrapItem, Text, Flex, Image, Box, useMediaQuery,Link } from "@chakra-ui/react";
 import sayanthan from "./sayantan.jpg";
 import ruchik from "./ruchik.jpg";
 import aryan from "./aryan.jpg";
@@ -7,9 +7,9 @@ import shubh from "./shubh.jpg";
 import React from "react";
 import sv from "./sv.jpg";
 import devfesttextbg from "./DEVFEST.png";
-function CordiCard({ img, name, position }) {
+function CordiCard({ img, name, position,link }) {
   return (
-    <Box
+    <Link
       borderRadius={"7%"}
       height={"100%"}
       width={"100%"}
@@ -23,6 +23,7 @@ function CordiCard({ img, name, position }) {
       alignItems={"center"}
       justifyContent={"space-evenly"}
       p={"3%"}
+      href={link}
     >
       <Image height={"75%"} src={img} marginTop={"10px"} p={"1%"}></Image>
       <Text color={"white"} paddingStart={"1rem"} fontSize={{ md: "1.5rem", base: "1rem" }} p={"1%"} fontFamily={"Didact Gothic"}>
@@ -31,7 +32,7 @@ function CordiCard({ img, name, position }) {
       <Text margin={"5px"} color={"#00a3ff"} paddingStart={"1rem"} fontSize={{ md: "1rem", base: "0.7rem" }} p={"1%"}>
         <b>{position}</b>
       </Text>
-    </Box>
+    </Link>
   );
 }
 function Cordinators() {
@@ -44,22 +45,22 @@ function Cordinators() {
         </Text>
         <Wrap spacing={"5rem"} justify={"center"} backgroundImage={isLargerThan1500 ? devfesttextbg : ""} backgroundRepeat={"no-repeat"} backgroundPosition={"center"}>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Sayantan Bera" position="CHIEF COORDINATOR" img={sayanthan} />
+            <CordiCard name="Sayantan Bera" position="CHIEF COORDINATOR" img={sayanthan} link="https://www.linkedin.com/in/berasayantan/"/>
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Ruchik Bakhai" position="SUB COORDINATOR" img={ruchik} />
+            <CordiCard name="Ruchik Bakhai" position="SUB COORDINATOR" img={ruchik} link="https://www.linkedin.com/in/ruchik-bakhai/"/>
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Aryan Bhosale" position="HEAD OF WEB DEVELOPMENT" img={aryan} />
+            <CordiCard name="Aryan Bhosale" position="HEAD OF WEB DEVELOPMENT" img={aryan} link="https://www.linkedin.com/in/aryan-bhosale-648323223/"/>
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Aditya Kulkarni" position="HEAD OF APP DEVELOPMENT" img={aditya} />
+            <CordiCard name="Aditya Kulkarni" position="HEAD OF APP DEVELOPMENT" img={aditya} link="https://www.linkedin.com/in/adikul3007/" />
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Shubh Agarwal" position="HEAD OF UI/UX" img={shubh} />
+            <CordiCard name="Shubh Agarwal" position="HEAD OF UI/UX" img={shubh} link="https://www.linkedin.com/in/iamshubhagarwal/" />
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="SV Sumanth" position="HEAD OF GAME DEVELOPMENT" img={sv} />
+            <CordiCard name="SV Sumanth" position="HEAD OF GAME DEVELOPMENT" img={sv} link="https://www.linkedin.com/in/s-v-sumanth-781232204/" />
           </WrapItem>
         </Wrap>
       </Flex>

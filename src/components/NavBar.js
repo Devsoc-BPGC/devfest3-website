@@ -20,20 +20,20 @@ const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef
         <Image src={devsoc_logo} height="30px"></Image>
         {isLargerThan800 ? (
           <Box marginLeft="auto">
-            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(aboutRef)}>
-              About
-            </Button>
-            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(eventsRef)}>
-              Events
-            </Button>
-            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(timelineRef)}>
+                        <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(timelineRef)}>
               Timeline
             </Button>
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(prizesRef)}>
               Prizes
             </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(eventsRef)}>
+              Events
+            </Button>
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(sponsorsRef)}>
               Sponsors
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(aboutRef)}>
+              About
             </Button>
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(teamRef)}>
               Team
@@ -50,27 +50,27 @@ const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef
               <DrawerContent>
                 <DrawerBody backgroundColor={"black"}>
                   <DrawerCloseButton color={"white"} />
-                  <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(aboutRef)}>
-                    About
-                  </Button>
-                  <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(eventsRef)}>
-                    Events
-                  </Button>
                   <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(timelineRef)}>
-                    Timeline
-                  </Button>
-                  <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(prizesRef)}>
-                    Prizes
-                  </Button>
-                  <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(sponsorsRef)}>
-                    Sponsors
-                  </Button>
-                  <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(teamRef)}>
-                    Team
-                  </Button>
-                  <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(faqRef)}>
-                    FAQs
-                  </Button>
+              Timeline
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(prizesRef)}>
+              Prizes
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(eventsRef)}>
+              Events
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(sponsorsRef)}>
+              Sponsors
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(aboutRef)}>
+              About
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(teamRef)}>
+              Team
+            </Button>
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(faqRef)}>
+              FAQs
+            </Button>
                 </DrawerBody>
               </DrawerContent>
             </Drawer>

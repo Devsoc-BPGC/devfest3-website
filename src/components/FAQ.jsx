@@ -9,7 +9,7 @@ const FAQ = (props) => {
     <AccordionItem>
     <Flex direction={"column"} color={"white"} m={"2%"}>
       <AccordionButton>
-      <Text fontSize={"3xl"} fontWeight={600} fontFamily={"Didact Gothic"}>
+      <Text fontSize={"2xl"} fontWeight={600} fontFamily={"Didact Gothic"}>
         {props.question}
       </Text>
       <AccordionIcon />
