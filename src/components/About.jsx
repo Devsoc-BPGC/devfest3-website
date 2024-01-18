@@ -14,7 +14,7 @@ const About = () => {
             the grand celebration of DevSoc's 10th anniversary. Come, be a part of this unique blend of learning and celebration!
           </Text>
         </Flex>
-        <Flex width={"50%"} alignItems={"center"} p={"5%"}>
+        <Flex width={"50%"} alignItems={"center"} p={"5%"} paddingLeft={"15%"}>
           <Text color={"white"} fontSize={{ base: "xl", md: "2xl", xl: "4xl" }}>
             2000+ Participants
             <br />

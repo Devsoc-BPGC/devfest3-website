@@ -1,4 +1,4 @@
-import { ChakraProvider, Flex, Image, Button, Text, Wrap, WrapItem, Link, Divider } from "@chakra-ui/react";
+import { ChakraProvider, Flex, Image, Wrap, WrapItem, Divider, IconButton, Button, Text, Link } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import devfest from "./DEVF3ST.png";
 import { motion } from "framer-motion";
@@ -10,13 +10,15 @@ import Prizes from "./components/Prizes";
 import Sponsorscard from "./components/Sponsorscard";
 // import Speakers from "./components/Speakers";
 import { useEffect } from "react";
-import jacket from "./components/Jacket.png";
+// import jacket from "./components/Jacket.png";
 import { useRef } from "react";
 import Events from "./components/Events";
 import About from "./components/About";
 import FAQs from "./components/FAQ";
 import Team from "./components/Team";
 import Cordinators from "./components/Cordinators";
+import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+
 function App() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -51,7 +53,7 @@ function App() {
                 <WrapItem>
                   <div id="apply-button" className="apply-button" data-hackathon-slug="devfest-3" data-button-theme="light" style={{ height: "3rem", width: "15rem" }}></div>
                 </WrapItem>
-                <WrapItem>
+                {/* <WrapItem>
                   <Link href={"https://forms.gle/8hTpsxaBWHphR3JfA"} w={"18rem"}>
                     <Button>
                       <Text fontFamily={"McLaren"} margin={"5px"}>
@@ -60,7 +62,7 @@ function App() {
                       <Image height={"80%"} src={jacket}></Image>
                     </Button>
                   </Link>
-                </WrapItem>
+                </WrapItem> */}
               </Wrap>
             </Flex>
           </motion.div>
@@ -87,7 +89,7 @@ function App() {
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"space-evenly"} height={"100vh"} direction={"column"} id={"sponsors"} ref={sponsorsRef}>
+        <Flex alignItems={"center"} justifyContent={"space-evenly"} direction={"column"} id={"sponsors"} ref={sponsorsRef}>
           <Sponsorscard />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
@@ -103,13 +105,41 @@ function App() {
           <Team />
         </Flex>
         <Flex minH={"100vh"}>
-         <Cordinators />
+          <Cordinators />
         </Flex>
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
         <Flex direction={"column"} ref={faqRef}>
           <FAQs />
+        </Flex>
+        <Flex width={"100%"} justifyContent={"space-evenly"} backgroundColor={"black"} zIndex={2} p={"1%"}>
+          <Link href="https://www.instagram.com/devsocbitsgoa/" isExternal>
+            <IconButton icon={<FaInstagramSquare style={{ height: "30px", width: "30px" }} />} height={"max-content"} minW={"unset"} />
+          </Link>
+          <Link href="https://www.linkedin.com/company/13598216/" isExternal>
+            <IconButton icon={<FaLinkedin style={{ height: "30px", width: "30px" }} />} height={"max-content"} minW={"unset"} />
+          </Link>
+          <Link href="https://twitter.com/devsocbitsgoa" isExternal>
+            <Button height={"max-content"} minW={"unset"} p={0} style={{ height: "30px", width: "30px" }}>
+              𝕏
+            </Button>
+          </Link>
+        </Flex>
+        <Flex color={"white"} justifyContent={"space-between"} alignItems={"center"}>
+          <Flex direction={"column"} p={"1%"}>
+            <Text color={"lightgray"}>Email</Text>
+            <Link href="mailto:devsocbpgc@gmail.com" fontWeight={700}>
+              devsocbpgc@gmail.com
+            </Link>
+          </Flex>
+          <Flex direction={"column"} p={"1%"}>
+            <Text color={"lightgray"} textAlign={"right"}>
+              Phone no.
+            </Text>
+            <Text fontWeight={700}>+91 9547917003</Text>
+            <Text fontWeight={700}>+91 9892887969</Text>
+          </Flex>
         </Flex>
         <footer style={{ color: "white", fontSize: "1rem", backgroundColor: "black", textAlign: "center" }}>
           Made with ❤️ by{" "}

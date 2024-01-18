@@ -67,7 +67,10 @@ const GameJamPrizes = () => {
         </Flex>
         <Flex width={"100%"} height={"100%"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
           <WinnerCard title="Top 25 Team" prizes={["1-month FREE access to Pro tier of echo3D (worth $99)", "Free access to courses worth Rs. 1000 from Outscal", "Certificate of Appreciation"]} />
-          <WinnerCard title="All Participants" prizes={["Free access to courses worth Rs. 1000 from Outscal", "Certificate of Participation"]} />
+          <WinnerCard
+            title="All Participants"
+            prizes={["1-month FREE access to Pro tier of echo3D (worth $99)", "Free access to courses worth Rs. 1000 from Outscal", "Certificate of Participation"]}
+          />
         </Flex>
       </Flex>
       <Flex></Flex>

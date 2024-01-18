@@ -51,6 +51,15 @@ const Event = (props) => {
         ) : (
           <></>
         )}
+        {props.rsvp ? (
+          <Button colorScheme="blue" width={"20%"} m={"3%"} marginBottom={"0"}>
+            <Link href={"https://forms.gle/ETaEqZyUNd77GZhz9"} isExternal>
+              RSVP
+            </Link>
+          </Button>
+        ) : (
+          <></>
+        )}
       </Flex>
 
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -86,7 +95,7 @@ const Events = () => {
     <>
       <Event image={event_images[0]} name={event_names[0]} content={event_content[0]} />
       <Event image={event_images[0]} name={event_names[1]} content={event_content[1]} register={true} />
-      <Event image={event_images[0]} name={event_names[2]} content={event_content[2]} />
+      <Event image={event_images[0]} name={event_names[2]} content={event_content[2]} rsvp={true} />
       <Event image={event_images[0]} name={event_names[3]} content={event_content[3]} />
     </>
   );
