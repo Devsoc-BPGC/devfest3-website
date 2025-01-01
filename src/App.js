@@ -20,16 +20,16 @@ import Cordinators from "./components/Cordinators";
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 function App() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
+  //   script.async = true;
+  //   script.defer = true;
+  //   document.body.appendChild(script);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
   const aboutRef = useRef(null);
   const eventsRef = useRef(null);
   const timelineRef = useRef(null);
@@ -49,27 +49,17 @@ function App() {
           <motion.div style={{ opacity: 0, height: "100%", width: "100%" }} animate={{ opacity: 1, transition: { duration: 1, delay: 4 } }}>
             <Flex flexDir={"column"} alignItems={"center"} justifyContent={"space-evenly"} height={"100%"} width={"100%"}>
               <Image src={devfest} height={{ xl: 200, md: 150, sm: 100, base: 50 }} />
-              <Wrap height="3.5rem" width={"100%"} justify="space-evenly" spacing="30px">
+              {/* <Wrap height="3.5rem" width={"100%"} justify="space-evenly" spacing="30px">
                 <WrapItem>
                   <div id="apply-button" className="apply-button" data-hackathon-slug="devfest-3" data-button-theme="light" style={{ height: "3rem", width: "15rem" }}></div>
                 </WrapItem>
-                {/* <WrapItem>
-                  <Link href={"https://forms.gle/8hTpsxaBWHphR3JfA"} w={"18rem"}>
-                    <Button>
-                      <Text fontFamily={"McLaren"} margin={"5px"}>
-                        Merchandise
-                      </Text>
-                      <Image height={"80%"} src={jacket}></Image>
-                    </Button>
-                  </Link>
-                </WrapItem> */}
-              </Wrap>
+              </Wrap> */}
             </Flex>
           </motion.div>
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
+        {/* <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
           <FestNo />
-        </Flex>
+        </Flex> */}
         <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"} ref={timelineRef}>
           <Timetable />
         </Flex>
@@ -80,12 +70,12 @@ function App() {
           <Register />
           <Prizes />
         </Flex>
-        <Flex width={"100%"} justifyContent={"center"}>
+        {/* <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
         <Flex alignItems={"start"} justifyContent={"end"} minH={"100vh"} p={"5%"} direction={"column"} ref={eventsRef}>
           <Events />
-        </Flex>
+        </Flex> */}
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
@@ -137,8 +127,8 @@ function App() {
             <Text color={"lightgray"} textAlign={"right"}>
               Phone no.
             </Text>
-            <Text fontWeight={700}>+91 9547917003</Text>
-            <Text fontWeight={700}>+91 9892887969</Text>
+            <Text fontWeight={700}>+91 85398 53805</Text>
+            <Text fontWeight={700}>+91 84002 36921</Text>
           </Flex>
         </Flex>
         <footer style={{ color: "white", fontSize: "1rem", backgroundColor: "black", textAlign: "center" }}>

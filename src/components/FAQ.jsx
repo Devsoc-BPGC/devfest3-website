@@ -27,7 +27,7 @@ const FAQ = (props) => {
 const FAQs = () => {
   const questions = [
     "1. What is DevFest?",
-    "2. When and where is DevFest 3.0 happening?",
+    "2. When and where is DevFest 4.0 happening?",
     "3. Who can participate in DevFest?",
     "4. Is there a registration fee for DevFest events?",
     "5. How can I register for specific events at DevFest?",
@@ -39,7 +39,7 @@ const FAQs = () => {
   ];
   const answers = [
     "   - DevFest is an annual technical festival organized by Developers' Society, BITS Goa, featuring a series of events, including hackathons, gamejam, workshop, and expert speaker session, aimed at fostering a vibrant coding culture.",
-    "   - DevFest 3.0 is scheduled from January 19th to January 21st, 2024. The event will take place in a hybrid mode, with in-person activities at BITS Pilani - Goa, and nationwide virtual participation.",
+    "   - DevFest 4.0 is scheduled from January 17th to January 19th, 2025. The event will take place in a hybrid mode, with in-person activities at BITS Pilani - Goa, and nationwide virtual participation.",
     "   - DevFest is open to everyone across the globe. Whether you're a seasoned developer or a beginner, there's something for everyone.",
     "   - No, all events at DevFest are entirely free.",
     "   - Event-specific registration details is available on the DevFest website. Simply visit the website, navigate to the event of your interest, and follow the registration instructions.",

@@ -1,15 +1,15 @@
 import React from "react";
-import polygon from "./polygon.png";
-import replit from "./replit.png";
-import { Box, Text, Wrap, WrapItem } from "@chakra-ui/react";
-import devfolio from "./devfolio.png";
-import outscal from "./outscal_logo.jpg";
-import interviewbuddy from "./interviewbuddy.png";
-import echo3D from "./echo3d2.png";
-import archegos from "./archegos.jpeg";
-import pizzahut from "./pizzahut.png";
-import igdc from "./igdc.png";
-import fablabs from "./fablabs.jpg";
+// import polygon from "./polygon.png";
+// import replit from "./replit.png";
+// import devfolio from "./devfolio.png";
+// import outscal from "./outscal_logo.jpg";
+// import interviewbuddy from "./interviewbuddy.png";
+// import echo3D from "./echo3d2.png";
+// import archegos from "./archegos.jpeg";
+// import pizzahut from "./pizzahut.png";
+// import igdc from "./igdc.png";
+// import fablabs from "./fablabs.jpg";
+import { Box, Text } from "@chakra-ui/react";
 
 const Sponsorscard = () => {
   return (
@@ -17,7 +17,8 @@ const Sponsorscard = () => {
       <Text padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily="Megrim">
         SPONSOR
       </Text>
-      <div className="gold" style={{ width: "100%", padding: "2%" }}>
+      <Text color={"white"} fontSize={"5xl"}>TBA</Text>
+      {/* <div className="gold" style={{ width: "100%", padding: "2%" }}>
         <Text width="100%" textColor="gold" textAlign="center" fontSize="2rem" fontFamily="Megrim">
           <b>GOLD TIER</b>
         </Text>
@@ -93,7 +94,7 @@ const Sponsorscard = () => {
             </WrapItem>
           </Wrap>
         </div>
-      </div>
+      </div> */}
     </Box>
   );
 };

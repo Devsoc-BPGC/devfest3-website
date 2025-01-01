@@ -1,11 +1,12 @@
-import { Wrap, WrapItem, Text, Flex, Image, Box, useMediaQuery,Link } from "@chakra-ui/react";
-import sayanthan from "./sayantan.jpg";
-import ruchik from "./ruchik.jpg";
-import aryan from "./aryan.jpg";
-import aditya from "./aditya.jpg";
-import shubh from "./shubh.jpg";
+import { Wrap, WrapItem, Text, Flex, Image, useMediaQuery,Link } from "@chakra-ui/react";
+import sneh from "./sneh_prakash.png";
+import divyansh from "./divyansh.png";
+import abheshek from "./abheshek.png";
+import mahir from "./mahir.png";
+import rajat from "./rajat.png";
+import sanchay from "./sanchay.png";
+import ronan from "./ronan.png";
 import React from "react";
-import sv from "./sv.jpg";
 import devfesttextbg from "./DEVFEST.png";
 function CordiCard({ img, name, position,link }) {
   return (
@@ -45,22 +46,25 @@ function Cordinators() {
         </Text>
         <Wrap spacing={"5rem"} justify={"center"} backgroundImage={isLargerThan1500 ? devfesttextbg : ""} backgroundRepeat={"no-repeat"} backgroundPosition={"center"}>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Sayantan Bera" position="CHIEF COORDINATOR" img={sayanthan} link="https://www.linkedin.com/in/berasayantan/"/>
+            <CordiCard name="Sneh Prakash" position="CHIEF COORDINATOR" img={sneh} link="https://in.linkedin.com/in/sneh-prakash-75a37a218"/>
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Ruchik Bakhai" position="SUB COORDINATOR" img={ruchik} link="https://www.linkedin.com/in/ruchik-bakhai/"/>
+            <CordiCard name="Divyansh Singh" position="SUB COORDINATOR" img={divyansh} link="https://in.linkedin.com/in/divyansh-singh-53623b251"/>
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Aryan Bhosale" position="HEAD OF WEB DEVELOPMENT" img={aryan} link="https://www.linkedin.com/in/aryan-bhosale-648323223/"/>
+            <CordiCard name="Abheshek Murugan" position="HEAD OF WEB DEVELOPMENT" img={abheshek} link="https://www.linkedin.com/in/abheshek-murugan"/>
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Aditya Kulkarni" position="HEAD OF APP DEVELOPMENT" img={aditya} link="https://www.linkedin.com/in/adikul3007/" />
+            <CordiCard name="Mahir Ghadiali" position="HEAD OF APP DEVELOPMENT" img={mahir} link="https://in.linkedin.com/in/mahirg" />
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="Shubh Agarwal" position="HEAD OF UI/UX" img={shubh} link="https://www.linkedin.com/in/iamshubhagarwal/" />
+            <CordiCard name="Rajat Srivastava" position="HEAD OF UI/UX" img={rajat} link="https://in.linkedin.com/in/rajat-srivastava-993037260/" />
           </WrapItem>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
-            <CordiCard name="SV Sumanth" position="HEAD OF GAME DEVELOPMENT" img={sv} link="https://www.linkedin.com/in/s-v-sumanth-781232204/" />
+            <CordiCard name="Sanchay Sahay" position="HEAD OF GAME DEVELOPMENT" img={sanchay} link="https://in.linkedin.com/in/supersanchayrx" />
+          </WrapItem>
+          <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
+            <CordiCard name="Ronan Coutinho" position="HEAD OF ARTIFICIAL INTELLIGENCE" img={ronan} link="https://www.linkedin.com/in/ronan-coutinho/" />
           </WrapItem>
         </Wrap>
       </Flex>

@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Hackathons from './components/Hackathons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route path="/hackathons" element={<Hackathons />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

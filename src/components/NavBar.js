@@ -26,8 +26,8 @@ const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(prizesRef)}>
               Prizes
             </Button>
-            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(eventsRef)}>
-              Events
+            <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => window.open("/hackathons", "_self")}>
+              Hackathons
             </Button>
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(sponsorsRef)}>
               Sponsors
@@ -57,7 +57,7 @@ const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef
               Prizes
             </Button>
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(eventsRef)}>
-              Events
+              Hackathons
             </Button>
             <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(sponsorsRef)}>
               Sponsors
