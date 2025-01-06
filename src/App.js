@@ -57,9 +57,9 @@ function App() {
             </Flex>
           </motion.div>
         </Flex>
-        {/* <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
+        <Flex alignItems={"center"} justifyContent={"center"} height={"100vh"}>
           <FestNo />
-        </Flex> */}
+        </Flex>
         <Flex alignItems={"center"} justifyContent={"center"} minH={"100vh"} ref={timelineRef}>
           <Timetable />
         </Flex>

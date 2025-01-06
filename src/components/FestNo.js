@@ -1,5 +1,5 @@
 import React from 'react'
-import fest3 from '../3.0Grp.png'
+import fest3 from '../components/3.0Grp.png'
 import { Box } from '@chakra-ui/react'
 function FestNo() {
   return (
