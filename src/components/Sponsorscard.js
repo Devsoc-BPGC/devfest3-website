@@ -9,7 +9,11 @@ import React from "react";
 // import pizzahut from "./pizzahut.png";
 // import igdc from "./igdc.png";
 // import fablabs from "./fablabs.jpg";
+import { Wrap, WrapItem } from "@chakra-ui/react";
 import { Box, Text } from "@chakra-ui/react";
+import devfolio from "../components/devfolio.png";
+import polygon from "../components/polygon.png";
+import ethindia from "../components/ethindia.png";
 
 const Sponsorscard = () => {
   return (
@@ -17,28 +21,26 @@ const Sponsorscard = () => {
       <Text padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily="Megrim">
         SPONSOR
       </Text>
-      <Text color={"white"} fontSize={"5xl"}>TBA</Text>
-      {/* <div className="gold" style={{ width: "100%", padding: "2%" }}>
-        <Text width="100%" textColor="gold" textAlign="center" fontSize="2rem" fontFamily="Megrim">
+      {/* <Text color={"white"} fontSize={"5xl"}>TBA</Text> */}
+      <div style={{ width: "100%", padding: "2%" }}>
+        {/* <Text width="100%" textColor="gold" textAlign="center" fontSize="2rem" fontFamily="Megrim">
           <b>GOLD TIER</b>
-        </Text>
-        <div className="gold-images" style={{ width: "100%", padding: "1%" }}>
+        </Text> */}
+        <div style={{ width: "100%", padding: "1%" }}>
           <Wrap justify="space-evenly" spacing="10px">
-            <WrapItem margin="10px">
+            <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
               <img src={devfolio} alt="DEVFOLIO LOGO" />
             </WrapItem>
-            <WrapItem margin="10px">
+            <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
               <img src={polygon} alt="POLYGON LOGO" />
             </WrapItem>
-            <WrapItem margin="10px">
-              <img src={outscal} alt="OUTSCAL LOGO" />
-            </WrapItem>
-            <WrapItem margin="10px" maxW={"20%"}>
-              <img src={igdc} alt="IGDC LOGO" />
+            <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
+              <img src={ethindia} alt="ETHINDIA LOGO" />
             </WrapItem>
           </Wrap>
         </div>
       </div>
+      {/* 
       <div className="silver" style={{ width: "100%", padding: "2%" }}>
         <Text width="100%" textColor="silver" textAlign="center" fontSize="2rem" fontFamily="Megrim">
           <b>SILVER TIER</b>
