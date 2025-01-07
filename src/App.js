@@ -53,7 +53,7 @@ function App() {
               <Image src={devfest} height={{ xl: 200, md: 150, sm: 100, base: 50 }} mb={5} />
               <Wrap height="3.5rem" width={"100%"} justify="space-evenly" spacing="30px">
                 <WrapItem>
-                  <div id="apply-button" className="apply-button" data-hackathon-slug="formidium-devfest" data-button-theme="light" style={{ height: "3rem", width: "15rem" }}></div>
+                  <div id="apply-button" className="apply-button" data-hackathon-slug="formidium-devfest-goa" data-button-theme="light" style={{ height: "3rem", width: "15rem" }}></div>
                 </WrapItem>
               </Wrap>
             </Flex>
