@@ -50,7 +50,7 @@ function App() {
         <Flex alignItems={"center"} justifyContent={"center"} height={{base: "60vh", md: "100vh"}}>
           {/* <motion.div style={{ opacity: 0, height: "100%", width: "100%" }} animate={{ opacity: 1, transition: { duration: 1, delay: 4 } }}> */}
             <Flex flexDir={"column"} alignItems={"center"} justifyContent={"center"} height={"100%"} width={"100%"}>
-              <Image src={devfest} height={{ xl: 200, md: 150, sm: 100, base: 50 }} />
+              <Image src={devfest} height={{ xl: 200, md: 150, sm: 100, base: 50 }} mb={5} />
               <Wrap height="3.5rem" width={"100%"} justify="space-evenly" spacing="30px">
                 <WrapItem>
                   <div id="apply-button" className="apply-button" data-hackathon-slug="devfest-3" data-button-theme="light" style={{ height: "3rem", width: "15rem" }}></div>
