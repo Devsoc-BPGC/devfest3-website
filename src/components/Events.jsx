@@ -1,5 +1,5 @@
 import { Flex, Text, Image, Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, Heading, Link } from "@chakra-ui/react";
-import gamejam from "./GameJam.png";
+import gamejam from "./Hackathon.jpg";
 
 const Event = (props) => {
   const gamejam_info1 = `🎮Attention game developers!!🎮
