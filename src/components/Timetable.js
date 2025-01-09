@@ -21,14 +21,30 @@ const Timetable = () => {
   // ];
 
   const Day_Schedule = [
-    [new DevfestEvent("TBA", "TBA", "TBA")],
-    [new DevfestEvent("TBA", "TBA", "TBA")],
-    [new DevfestEvent("TBA", "TBA", "TBA")],
+    [
+      new DevfestEvent("Kickoff", "6 PM"),
+      new DevfestEvent("Formidium Speaker Session", "6 PM"),
+      new DevfestEvent("Formidium Hackathon Starts", "9 PM onwards"),
+      new DevfestEvent("GameJam Starts", "9 PM onwards")
+    ],
+    [
+      new DevfestEvent("Workshop Part 1: WebDev", "10 AM - 1 PM"),
+      new DevfestEvent("Workshop Part 2: WebDev", "2 PM - 4 PM"),
+      new DevfestEvent("XBox Speaker Session", "5 PM"),
+      new DevfestEvent("GSoC Session with Ronan", "8 PM")
+    ],
+    [
+      new DevfestEvent("Workshop Part 1: GameDev", "10 AM - 1 PM"),
+      new DevfestEvent("Workshop Part 2: GameDev", "2 PM - 4 PM"),
+      new DevfestEvent("DUALITE Session (Online)", "5 PM"),
+      new DevfestEvent("Formidium Speaker Session", "7:30 PM"),
+      new DevfestEvent("Game Jam and Hackathon Prize Distribution", "9 PM")
+    ],
   ];
 
   return (
     <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center" >
-      <Text flexGrow={1} padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily={"Sarpanch"}>
+      <Text flexGrow={1} padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily={"ROGFont"}>
         TIMETABLE
       </Text>
       <Flex justifyContent="space-between" width="100%" flexDir={"column"} >

@@ -59,7 +59,6 @@ const FAQs = () => {
         <FAQ question={item} answer={answers[i]} />
       ))}
       </Accordion>
-      ;
     </Flex>
   );
 };

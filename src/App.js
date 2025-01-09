@@ -30,13 +30,13 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    // const script = document.createElement("script");
-    // script.src = "https://apply.devfolio.co/v2/sdk.js";
-    // script.async = true;
-    // script.defer = true;
-    // document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
     return () => {
-      // document.body.removeChild(script);
+      document.body.removeChild(script);
     };
   }, []);
   const aboutRef = useRef(null);
@@ -117,7 +117,7 @@ function App() {
         <Flex direction={"column"} ref={faqRef}>
           <FAQs />
         </Flex>
-        <Flex width="100%" justifyContent="space-between" alignItems="center" backgroundColor="black" zIndex={2} p="1%">
+        <Flex width="100%" justifyContent="space-between" alignItems="center" zIndex={2} p="1%">
           <Flex alignItems="center">
             <Image src={logo} alt="Your Logo" height="150px" /> 
           </Flex>
@@ -155,8 +155,7 @@ function App() {
 <Flex 
   color="white" 
   justifyContent="space-between" 
-  alignItems="center" 
-  bg={"black"}
+  alignItems="center"
   p="1%"
 >
   <Flex direction="column" p="1%">
@@ -175,8 +174,8 @@ function App() {
   </Flex>
 </Flex>
 
-        <footer style={{ color: "white", fontSize: "1rem", backgroundColor: "black", textAlign: "center" }}>
-          Made with ❤️ by{" "}
+        <footer style={{ color: "white", fontSize: "1rem", textAlign: "center" }}>
+          Made with ❤️ by
           <a href="https://devsoc.club" style={{ color: "#ADD8E6" }}>
             DevSoc
           </a>

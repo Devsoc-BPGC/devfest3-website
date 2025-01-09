@@ -26,21 +26,21 @@ const WinnerCard = (props) => {
   );
 };
 
-const GameJamPrizes = () => {
+const HackathonPrizes = () => {
   return (
     <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
       <Text fontFamily={"Sarpanch"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
-        GameJam Prizes
+        Hackathon Prizes
       </Text>
       <Flex flex={2} width={"100%"} direction={"column"}>
         <Flex width={"100%"} height={"100%"} fontFamily={"Sarpanch"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
-          <WinnerCard title="Winner" prizes={["TBA"]} />
-          <WinnerCard title="First Runner Up" prizes={["TBA"]} />
-          <WinnerCard title="Second Runner Up" prizes={["TBA"]} />
+          <WinnerCard title="Winner" prizes={["Cash Prize of ₹50,000"]} />
+          <WinnerCard title="First Runner Up" prizes={["Cash Prize of ₹30,000"]} />
+          <WinnerCard title="Second Runner Up" prizes={["Cash Prize of ₹20,000"]} />
         </Flex>
         <Flex width={"100%"} height={"100%"} fontFamily={"Sarpanch"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
-          <WinnerCard title="Top 25 Team" prizes={["TBA"]} />
-          <WinnerCard title="All Participants" prizes={["TBA"]} />
+          <WinnerCard title="Top 25 Team" prizes={["Free Devfest T-shirts"]} />
+          <WinnerCard title="All Participants" prizes={["Free Devfolio T-shirts"]} />
         </Flex>
       </Flex>
       <Flex></Flex>
@@ -48,11 +48,11 @@ const GameJamPrizes = () => {
   );
 };
 
-const HackathonPrizes = () => {
+const GameJamPrizes = () => {
   return (
     <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
       <Text fontFamily={"Sarpanch"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
-        Hackathon Prizes
+        GameJam Prizes
       </Text>
       <Flex flex={2} width={"100%"} direction={"column"}>
         <Flex width={"100%"} height={"100%"}fontFamily={"Sarpanch"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>

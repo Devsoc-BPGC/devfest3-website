@@ -14,89 +14,61 @@ import { Box, Text } from "@chakra-ui/react";
 import devfolio from "../components/devfolio.png";
 import polygon from "../components/polygon.png";
 import ethindia from "../components/ethindia.png";
+import xbox from "../components/xbox.jpg";
+import dualite from "../components/dualite.png";
+import formidium from "../components/formidium.png";
 
 const Sponsorscard = () => {
   return (
-    <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center" >
+    <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center">
       <Text padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily={"Sarpanch"}>
-        SPONSOR
+        SPONSORS
       </Text>
-      {/* <Text color={"white"} fontSize={"5xl"}>TBA</Text> */}
       <div style={{ width: "100%", padding: "2%" }}>
-        {/* <Text width="100%" textColor="gold" textAlign="center" fontSize="2rem" fontFamily="Megrim">
+        <Text width="100%" textAlign="center" fontSize="2rem" fontFamily="Megrim">
+          <b>TITLE SPONSOR</b>
+        </Text>
+        <div style={{ width: "100%", padding: "1%" }}>
+          <Wrap justify="space-evenly" spacing="10px">
+            <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
+              <img src={formidium} alt="FORMIDIUM LOGO" />
+            </WrapItem>
+          </Wrap>
+        </div>
+      </div>
+      <div style={{ width: "100%", padding: "2%" }}>
+        <Text width="100%" textColor="gold" textAlign="center" fontSize="2rem" fontFamily="Megrim">
           <b>GOLD TIER</b>
-        </Text> */}
+        </Text>
         <div style={{ width: "100%", padding: "1%" }}>
           <Wrap justify="space-evenly" spacing="10px">
             <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
               <img src={devfolio} alt="DEVFOLIO LOGO" />
             </WrapItem>
             <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
-              <img src={polygon} alt="POLYGON LOGO" />
-            </WrapItem>
-            <WrapItem margin="10px" maxW={{ base: "100%", sm: "50%", md: "40%" }}>
-              <img src={ethindia} alt="ETHINDIA LOGO" />
+              <img src={xbox} alt="XBOX LOGO" />
             </WrapItem>
           </Wrap>
         </div>
       </div>
-      {/* 
       <div className="silver" style={{ width: "100%", padding: "2%" }}>
         <Text width="100%" textColor="silver" textAlign="center" fontSize="2rem" fontFamily="Megrim">
           <b>SILVER TIER</b>
         </Text>
         <div className="silver-images" style={{ width: "100%", padding: "1%" }}>
-          <Wrap justify="space-evenly" spacing="30px">
-            <WrapItem width={{ base: "50%", md: "25%", xl: "20%" }} margin="10px">
-              <img src={replit} alt="REPLIT LOGO" />
+          <Wrap justify="space-evenly" spacing="30px" align={'center'}>
+            <WrapItem maxW={{ base: "50%", md: "25%", xl: "20%" }} margin="10px">
+              <img src={polygon} alt="POLYGON LOGO" />
             </WrapItem>
-            <WrapItem width={{ base: "50%", md: "25%", xl: "15%" }} margin="10px">
-              <img src={archegos} alt="ARCHEGOS LOGO" />
+            <WrapItem maxW={{ base: "50%", md: "25%", xl: "15%" }} margin="10px">
+              <img src={ethindia} alt="ETHINDIA LOGO" />
             </WrapItem>
-            <WrapItem margin="10px" width={{ base: "100%", sm: "50%", md: "25%" }} paddingLeft={{ base: "10%", sm: "0" }} paddingRight={{ base: "10%", sm: "0" }} alignItems={"center"}>
-              <img src={echo3D} alt="ECHO3D LOGO" />
+            <WrapItem maxW={{ base: "50%", md: "25%", xl: "15%" }} margin="10px">
+              <img src={dualite} alt="DUALITE LOGO" />
             </WrapItem>
           </Wrap>
         </div>
       </div>
-      <div className="bronze" style={{ width: "100%", padding: "2%" }}>
-        <Text width="100%" textColor="#874c12" textAlign="center" fontSize="2rem" fontFamily="Megrim">
-          <b>BRONZE TIER</b>
-        </Text>
-        <div className="bronze-images" style={{ width: "100%", padding: "1%" }}>
-          <Wrap justify="center" spacing="30px">
-            <WrapItem margin="10px" width={{ base: "100%", sm: "50%", md: "20%" }} paddingLeft={{ base: "10%", sm: "0" }} paddingRight={{ base: "10%", sm: "0" }}>
-              <img src={interviewbuddy} alt="INTERVIEWBUDDY LOGO" />
-            </WrapItem>
-            ``
-          </Wrap>
-        </div>
-      </div>
-      <div className="food" style={{ width: "100%", padding: "2%" }}>
-        <Text width="100%" textColor="white" textAlign="center" fontSize="2rem" fontFamily="Megrim">
-          <b>FOOD PARTNER</b>
-        </Text>
-        <div className="food-images" style={{ width: "100%", padding: "1%" }}>
-          <Wrap justify="center" spacing="30px">
-            <WrapItem margin="10px" width={{ base: "100%", sm: "50%", md: "20%" }} paddingLeft={{ base: "10%", sm: "0" }} paddingRight={{ base: "10%", sm: "0" }}>
-              <img src={pizzahut} alt="PIZZAHUT LOGO" />
-            </WrapItem>
-            ``
-          </Wrap>
-        </div>
-      </div>
-      <div className="merch" style={{ width: "100%", padding: "2%" }}>
-        <Text width="100%" textColor="white" textAlign="center" fontSize="2rem" fontFamily="Megrim">
-          <b>MERCHANDISE PARTNER</b>
-        </Text>
-        <div className="merch-images" style={{ width: "100%", padding: "1%" }}>
-          <Wrap justify="center" spacing="30px">
-            <WrapItem margin="10px" width={{ base: "100%", sm: "50%", md: "20%" }} paddingLeft={{ base: "10%", sm: "0" }} paddingRight={{ base: "10%", sm: "0" }}>
-              <img src={fablabs} alt="FABLABS LOGO" />
-            </WrapItem>
-          </Wrap>
-        </div>
-      </div> */}
     </Box>
   );
 };
