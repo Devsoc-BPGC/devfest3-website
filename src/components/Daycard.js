@@ -7,7 +7,7 @@ function Daycard(props) {
         <Text
           textColor="white"
           transform="rotate(180deg)"
-          fontFamily="Megrim"
+          fontFamily={"Sarpanch"}
           minW={"100%"}
           fontSize={{ base: "1.5rem", md: "2rem", lg: "2.5rem", xl: "3rem", "2xl": "3.5rem" }}
           style={{ writingMode: "vertical-rl", textOrientation: "sideways-right" }}
@@ -22,7 +22,7 @@ function Daycard(props) {
           return (
             <Box margin="5px" key={index} height={{ base: "2rem", md: "3.25rem", lg: "4rem", xl: "5rem", "2xl": "6rem" }} width="100%" display="flex" alignItems="center">
               <Text
-                fontFamily="Megrim"
+                fontFamily={"Sarpanch"}
                 textColor="white"
                 fontSize={{ base: "1rem", md: "1.5rem", lg: "2rem", xl: "2.5rem", "2xl": "3rem" }}
                 lineHeight={{ base: "1rem", md: "1.5rem", lg: "2rem", xl: "2.5rem", "2xl": "3rem" }}

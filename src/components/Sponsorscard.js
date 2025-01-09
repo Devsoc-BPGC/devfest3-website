@@ -17,8 +17,8 @@ import ethindia from "../components/ethindia.png";
 
 const Sponsorscard = () => {
   return (
-    <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center">
-      <Text padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily="Megrim">
+    <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center" >
+      <Text padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily={"Sarpanch"}>
         SPONSOR
       </Text>
       {/* <Text color={"white"} fontSize={"5xl"}>TBA</Text> */}

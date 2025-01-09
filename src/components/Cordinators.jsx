@@ -27,7 +27,7 @@ function CordiCard({ img, name, position,link }) {
       href={link}
     >
       <Image height={"75%"} src={img} marginTop={"10px"} p={"1%"}></Image>
-      <Text color={"white"} paddingStart={"1rem"} fontSize={{ md: "1.5rem", base: "1rem" }} p={"1%"} fontFamily={"Didact Gothic"}>
+      <Text color={"white"} paddingStart={"1rem"} fontSize={{ md: "1.5rem", base: "1rem" }} p={"1%"} fontFamily={"Sarpanch"}>
         <b>{name}</b>
       </Text>
       <Text margin={"5px"} color={"#00a3ff"} paddingStart={"1rem"} fontSize={{ md: "1rem", base: "0.7rem" }} p={"1%"}>
@@ -41,10 +41,10 @@ function Cordinators() {
   return (
     <>
       <Flex width={"100%"} direction={"column"} alignItems={"center"} p={"2%"} paddingTop={0}>
-        <Text fontFamily={"Megrim"} fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} color={"white"} width={"100%"} paddingBottom={"2rem"}>
+        <Text fontFamily={"Sarpanch"} fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} color={"white"} width={"100%"} paddingBottom={"2rem"}>
           Coordinators
         </Text>
-        <Wrap spacing={"5rem"} justify={"center"} backgroundImage={isLargerThan1500 ? devfesttextbg : ""} backgroundRepeat={"no-repeat"} backgroundPosition={"center"}>
+        <Wrap fontFamily={"Sarpanch"} spacing={"5rem"} justify={"center"} backgroundImage={isLargerThan1500 ? devfesttextbg : ""} backgroundRepeat={"no-repeat"} backgroundPosition={"center"}>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
             <CordiCard name="Sneh Prakash" position="CHIEF COORDINATOR" img={sneh} link="https://in.linkedin.com/in/sneh-prakash-75a37a218"/>
           </WrapItem>
