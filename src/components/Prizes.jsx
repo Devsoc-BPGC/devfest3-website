@@ -29,16 +29,16 @@ const WinnerCard = (props) => {
 const GameJamPrizes = () => {
   return (
     <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
-      <Text fontFamily={"Megrim"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
+      <Text fontFamily={"Sarpanch"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
         GameJam Prizes
       </Text>
       <Flex flex={2} width={"100%"} direction={"column"}>
-        <Flex width={"100%"} height={"100%"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+        <Flex width={"100%"} height={"100%"} fontFamily={"Sarpanch"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
           <WinnerCard title="Winner" prizes={["TBA"]} />
           <WinnerCard title="First Runner Up" prizes={["TBA"]} />
           <WinnerCard title="Second Runner Up" prizes={["TBA"]} />
         </Flex>
-        <Flex width={"100%"} height={"100%"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+        <Flex width={"100%"} height={"100%"} fontFamily={"Sarpanch"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
           <WinnerCard title="Top 25 Team" prizes={["TBA"]} />
           <WinnerCard title="All Participants" prizes={["TBA"]} />
         </Flex>
@@ -51,16 +51,16 @@ const GameJamPrizes = () => {
 const HackathonPrizes = () => {
   return (
     <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
-      <Text fontFamily={"Megrim"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
+      <Text fontFamily={"Sarpanch"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
         Hackathon Prizes
       </Text>
       <Flex flex={2} width={"100%"} direction={"column"}>
-        <Flex width={"100%"} height={"100%"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+        <Flex width={"100%"} height={"100%"}fontFamily={"Sarpanch"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
           <WinnerCard title="Winner" prizes={["TBA"]} />
           <WinnerCard title="First Runner Up" prizes={["TBA"]} />
           <WinnerCard title="Second Runner Up" prizes={["TBA"]} />
         </Flex>
-        <Flex width={"100%"} height={"100%"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
+        <Flex width={"100%"} height={"100%"}fontFamily={"Sarpanch"} justifyContent={"space-evenly"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
           <WinnerCard title="Top 25 Team" prizes={["TBA"]} />
           <WinnerCard title="All Participants" prizes={["TBA"]} />
         </Flex>

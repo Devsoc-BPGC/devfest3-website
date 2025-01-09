@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Text, Image, Button, ChakraProvider, useMediaQuery, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import devsoc_logo from "./devsoc_logo.png";
+// import devsoc_logo from "./devsoc_logo.png";
+import devsoc_logo2 from "./devsoclogo2.png";
 
 const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef, prizesRef }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -12,12 +13,9 @@ const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef
   }
 
   return (
-    <ChakraProvider>
-      <Box width="100%" alignItems="center" display="flex" backgroundColor="#212121" p={"0.5%"}>
-        <Text height="100%" fontSize="20px" color="white" marginRight="10px" marginLeft={"1%"}>
-          Developers' Society BITS Goa
-        </Text>
-        <Image src={devsoc_logo} height="30px"></Image>
+    <ChakraProvider >
+      <Box width="100%" alignItems="center" display="flex" backgroundColor="rgba(0, 0, 28, 0.8)"  backdropFilter={"blur(10px)"}  bac p={"0.2%"} fontFamily={"sarpanch"} >
+        <Image src={devsoc_logo2} height="60px" p={"0.5%"}></Image>
         {isLargerThan800 ? (
           <Box marginLeft="auto">
                         <Button marginLeft="10px" variant="ghost" color="white" colorScheme="whiteAlpha" onClick={() => onClick(timelineRef)}>

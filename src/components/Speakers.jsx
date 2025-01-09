@@ -8,7 +8,7 @@ const Speakers = () => {
         <Image src={speaker1} />
       </Flex>
       <Box height={"30%"} width={"60%"} borderRadius={"16px"} backgroundColor={"rgba(255,255,255, 0.2)"} marginRight={"10%"} marginTop={"20%"} p={"1%"} color={"white"}>
-        <Text textAlign={"center"} width={"100%"} fontSize={"3xl"} fontFamily={"Megrim"} fontWeight={800}>
+        <Text textAlign={"center"} width={"100%"} fontSize={"3xl"} fontFamily={"Sarpanch"} fontWeight={800}>
           Kunal Kushwaha
         </Text>
         <br></br>

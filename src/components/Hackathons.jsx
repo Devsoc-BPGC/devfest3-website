@@ -1,18 +1,37 @@
-import { ChakraProvider, Flex, Image, Text, VStack } from "@chakra-ui/react";
-import React from "react";
+import { ChakraProvider, Flex, Image, VStack, IconButton, Button, Text, Link } from "@chakra-ui/react";
+import NavBar from "../components/NavBar";
+import logo from "../components/devsocbwlogo.png"
+import { useRef } from "react";
 import formidium_hackathon from "../components/formidium_hackathon.png";
 import rectangle from "../components/Rectangle 1.png";
 import purpose from "../components/purpose.svg";
 import tracks from "../components/tracks_overview.png";
 import problems from "../components/problems.png";
 import bg from "../components/bg.png";
+import locvector from "../components/locvector.png";
+import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+
 
 const Hackathons = () => {
+   const aboutRef = useRef(null);
+    const eventsRef = useRef(null);
+    const timelineRef = useRef(null);
+    const prizesRef = useRef(null);
+    const sponsorsRef = useRef(null);
+    const teamRef = useRef(null);
+    const faqRef = useRef(null);
+  
   return (
     <ChakraProvider>
-      <Flex bgColor={"black"} color={"white"} justify={"center"} align={"center"} width={"100%"} direction={"column"} bgImg={bg} bgPosition={'top'} bgSize={'contain'}>
+      <Flex bgColor={"black"} color={"white"}  width={"100%"} direction={"column"} bgImg={bg} bgPosition={'top'} bgSize={'contain'}>
+      <NavBar aboutRef={aboutRef} eventsRef={eventsRef} timelineRef={timelineRef} prizesRef={prizesRef} sponsorsRef={sponsorsRef} teamRef={teamRef} faqRef={faqRef} />
+       
         <Flex direction={"column"} align={"center"} justify={"center"} w={"100%"} height={{base: "50vh", lg: "80vh"}}>
           <Image src={formidium_hackathon} alt={"Formidium Hackathon"} width={"70%"} pointerEvents={"none"} />
+          <Flex alignItems="center" mb={5}>
+              <Image src={locvector} alt="Location Vector" mr={2} />
+                  <Text fontSize={{ xl: 24, md: 20, sm: 15, base: 10 }} fontFamily={"Sarpanch"}>BITS Pilani K.K. Birla Goa Campus</Text>
+          </Flex>
         </Flex>
         <Flex w={"100%"} justifyContent={"space-between"} alignItems={"center"} direction={{ base: "column", lg: "row" }} mt={10}>
           <Flex alignItems={"center"} justifyContent={"center"} pl={{base: 0, lg: 10}}>
@@ -118,6 +137,70 @@ const Hackathons = () => {
             </Text>
           </Flex>
         </Flex>
+        <Flex width="100%" justifyContent="space-between" alignItems="center" backgroundColor="black" zIndex={2} p="1%">
+          <Flex alignItems="center">
+            <Image src={logo} alt="Your Logo" height="150px" /> 
+          </Flex>
+          <Flex justifyContent="flex-end" alignItems="center" gap={9}>
+            <Link href="https://www.instagram.com/devsocbitsgoa/" isExternal>
+              <IconButton 
+                icon={<FaInstagramSquare style={{ height: "30px", width: "30px" }} />} 
+                height="max-content" 
+                minW="unset" 
+                aria-label="Instagram"
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/company/13598216/" isExternal>
+              <IconButton 
+                icon={<FaLinkedin style={{ height: "30px", width: "30px" }} />} 
+                height="max-content" 
+                minW="unset" 
+                aria-label="LinkedIn"
+              />
+            </Link>
+            <Link href="https://twitter.com/devsocbitsgoa" isExternal>
+              <Button 
+                height="max-content" 
+                minW="unset" 
+                p={0} 
+                style={{ height: "30px", width: "30px" }}
+                aria-label="Twitter"
+              >
+                𝕏
+              </Button>
+            </Link>
+          </Flex>
+        </Flex>
+
+<Flex 
+  color="white" 
+  justifyContent="space-between" 
+  alignItems="center" 
+  bg={"black"}
+  p="1%"
+>
+  <Flex direction="column" p="1%">
+    <Text color="lightgray">Email</Text>
+    <Link href="mailto:devsocbpgc@gmail.com" fontWeight={700}>
+      devsocbpgc@gmail.com
+    </Link>
+  </Flex>
+
+  <Flex direction="column" p="1%">
+    <Text color="lightgray" textAlign="right">
+      Phone no.
+    </Text>
+    <Text fontWeight={700}>+91 85398 53805</Text>
+    <Text fontWeight={700}>+91 84002 36921</Text>
+  </Flex>
+</Flex>
+
+        <footer width={"100%"} style={{ color: "white", fontSize: "1rem", backgroundColor: "black", textAlign: "center" }}>
+          Made with ❤️ by{" "}
+          <a href="https://devsoc.club" style={{ color: "#ADD8E6" }}>
+            DevSoc
+          </a>
+        </footer>
       </Flex>
     </ChakraProvider>
   );

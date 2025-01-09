@@ -27,11 +27,11 @@ const Timetable = () => {
   ];
 
   return (
-    <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center">
-      <Text flexGrow={1} padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily="Megrim">
+    <Box height="100%" width="100%" display="flex" flexDir="column" alignItems="center" >
+      <Text flexGrow={1} padding="30px" width="100%" textAlign="start" textColor="white" fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} fontFamily={"Sarpanch"}>
         TIMETABLE
       </Text>
-      <Flex justifyContent="space-between" width="100%" flexDir={"column"}>
+      <Flex justifyContent="space-between" width="100%" flexDir={"column"} >
         <Flex width={"100%"} justifyContent="space-evenly">
           <Daycard num={0} events={Day_Schedule[0]} />
           <Timecard events={Day_Schedule[0]}></Timecard>
