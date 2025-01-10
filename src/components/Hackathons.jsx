@@ -80,7 +80,7 @@ const Hackathons = () => {
             <Text width={"100%"} textAlign={"center"} fontFamily={"ROGFont"} my={10} fontSize={"2xl"}>
               Track 1: AI Powered Applications
             </Text>
-            <Text fontFamily={"ROGFont"} fontSize={"xl"}>
+            {/* <Text fontFamily={"ROGFont"} fontSize={"xl"}>
               Personalized Gift Recommendation AI:
             </Text>
             <Text>
@@ -114,13 +114,13 @@ const Hackathons = () => {
               <br />- Collect relevant data from platforms like LinkedIn, Twitter, and GitHub. - Use AI to rank leads based on relevance, activity, and potential interest.
               <br />- Provide actionable insights, such as recent activities, interests, or mutual connections, to assist sales teams.
               <br />- Deliver a list of high-priority leads in a structured format (e.g., CSV, CRM integration).
-            </Text>
+            </Text> */}
           </Flex>
           <Flex direction={"column"} width={"80%"} ml="10%">
             <Text width={"100%"} textAlign={"center"} fontFamily={"ROGFont"} my={10} fontSize={"2xl"}>
               Track 2: Blockchain Payment Systems
             </Text>
-            <Text fontFamily={"ROGFont"} fontSize={"xl"}>
+            {/* <Text fontFamily={"ROGFont"} fontSize={"xl"}>
               Cross-Border Payment Platform:
             </Text>
             <Text>
@@ -141,7 +141,7 @@ const Hackathons = () => {
               <br />- Implement smart contracts that automate subscription payments and cancellations.
               <br />- Provide a user-friendly interface to manage subscriptions and view payment history.
               <br />- Ensure payment data is encrypted, and transactions are tamper-proof.
-            </Text>
+            </Text> */}
           </Flex>
           <Flex direction={"column"} width={"80%"} ml="10%">
             <Text width={"100%"} textAlign={"center"} fontFamily={"ROGFont"} my={10} fontSize={"2xl"}>
@@ -150,7 +150,7 @@ const Hackathons = () => {
             {/* <Text fontFamily={"ROGFont"} fontSize={"xl"}>
               Cross-Border Payment Platform:
             </Text> */}
-            <Text>
+            {/* <Text>
               Develop a Collaborative Grading Platform for Universities with Role-Based Access for Faculty, TAs, and Students. Grading and managing coursework in large university classes can become
               cumbersome, especially when multiple Teaching Assistants (TAs) are involved. This hackathon challenges participants to build a secure, role-based grading platform that streamlines the
               grading process by allowing faculty to assign TAs to courses and manage student rosters. TAs should have the ability to grade student submissions directly by reviewing uploaded PDFs of
@@ -163,7 +163,7 @@ const Hackathons = () => {
               override or adjust TA-submitted grades if necessary.
               <br />- Student Access: Students can view their graded answer sheets and feedback through the portal. Students can request re-evaluation or clarification on grades directly within the
               platform.
-            </Text>
+            </Text> */}
           </Flex>
         </Flex>
         <Flex width="100%" justifyContent="space-between" alignItems="center" zIndex={2} p="1%">
