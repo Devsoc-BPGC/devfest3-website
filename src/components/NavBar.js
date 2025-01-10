@@ -8,7 +8,7 @@ const NavBar = ({ eventsRef, sponsorsRef, timelineRef, aboutRef, teamRef, faqRef
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isLargerThan800] = useMediaQuery("(min-width: 950px)");
   function onClick(ref) {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    ref.current ? ref.current.scrollIntoView({ behavior: "smooth" }) : window.open("/", "_self");
     onClose();
   }
 

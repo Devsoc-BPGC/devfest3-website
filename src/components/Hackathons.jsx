@@ -143,6 +143,28 @@ const Hackathons = () => {
               <br />- Ensure payment data is encrypted, and transactions are tamper-proof.
             </Text>
           </Flex>
+          <Flex direction={"column"} width={"80%"} ml="10%">
+            <Text width={"100%"} textAlign={"center"} fontFamily={"ROGFont"} my={10} fontSize={"2xl"}>
+              Track 3: Grading Platform
+            </Text>
+            {/* <Text fontFamily={"ROGFont"} fontSize={"xl"}>
+              Cross-Border Payment Platform:
+            </Text> */}
+            <Text>
+              Develop a Collaborative Grading Platform for Universities with Role-Based Access for Faculty, TAs, and Students. Grading and managing coursework in large university classes can become
+              cumbersome, especially when multiple Teaching Assistants (TAs) are involved. This hackathon challenges participants to build a secure, role-based grading platform that streamlines the
+              grading process by allowing faculty to assign TAs to courses and manage student rosters. TAs should have the ability to grade student submissions directly by reviewing uploaded PDFs of
+              answer sheets, while faculty oversee and manage the grading workflow.
+              <br />
+              Requirements:
+              <br />- Role Management: Faculty can add/remove TAs and students for each course. TAs are assigned to specific courses and can only grade students in their assigned courses.
+              <br />- Answer Sheet Management: TAs can upload PDF answer sheets for individual students. TAs can review, grade, and provide feedback directly on the uploaded PDFs.
+              <br />- Grading and Feedback: Each TA can submit grades for students within the course. Grading rubrics can be attached to each assignment by faculty for consistency. Faculty can
+              override or adjust TA-submitted grades if necessary.
+              <br />- Student Access: Students can view their graded answer sheets and feedback through the portal. Students can request re-evaluation or clarification on grades directly within the
+              platform.
+            </Text>
+          </Flex>
         </Flex>
         <Flex width="100%" justifyContent="space-between" alignItems="center" zIndex={2} p="1%">
           <Flex alignItems="center">
@@ -180,7 +202,7 @@ const Hackathons = () => {
           </Flex>
         </Flex>
 
-        <footer width={"100%"} style={{ color: "white", fontSize: "1rem",  textAlign: "center" }}>
+        <footer width={"100%"} style={{ color: "white", fontSize: "1rem", textAlign: "center" }}>
           Made with ❤️ by
           <a href="https://devsoc.club" style={{ color: "#ADD8E6" }}>
             DevSoc
