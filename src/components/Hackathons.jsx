@@ -53,7 +53,7 @@ const Hackathons = () => {
           </Text>
           <img src={purpose} alt={"Purpose"} />
         </Flex>
-        <Flex w={"100%"} m={10} justifyContent={"space-between"} direction={"column"} mt={10}>
+        <Flex w={"100%"} justifyContent={"space-between"} direction={"column"} mt={10}>
           <Image src={tracks} alt={"Tracks"} width={{ base: "95%", md: "60%", lg: "40%" }} />
           <Text fontFamily={"Sarpanch"} my={"4rem"} mx={5} textAlign={"center"}>
             We've structured the hackathon into three distinct tracks to help participants channel their efforts and expertise:
