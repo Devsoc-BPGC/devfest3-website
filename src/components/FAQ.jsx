@@ -1,8 +1,9 @@
-import { Flex, Text,  Accordion,
+import { Flex, Text,  Accordion,Box,
  AccordionItem,
   AccordionButton,
   AccordionPanel,
   AccordionIcon, } from "@chakra-ui/react";
+  import gradient from "./Rectanglegradient.png"
 
 const FAQ = (props) => {
   return (
@@ -51,9 +52,29 @@ const FAQs = () => {
   ];
   return (
     <Flex direction={"column"} width={"100%"} p={"2%"} paddingTop={0}>
-      <Text fontFamily={"Sarpanch"} fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} color={"white"} width={"100%"}>
-        FAQs
-      </Text>
+     <Box
+        width="100%"
+        height="100%"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        backgroundImage={gradient}
+        backgroundSize="auto 100%"
+        backgroundPosition="left center"
+        marginBottom={"2rem"}
+        backgroundRepeat="no-repeat"
+      >
+        <Text
+          padding="20px"
+          width="100%"
+          textAlign="start"
+          textColor="white"
+          fontSize={{ base: "2rem", md: "2.5rem", lg: "3rem", xl: "3.5rem" }}
+          fontFamily="Sarpanch"
+        >
+          FAQs 
+        </Text>
+      </Box>
       <Accordion defaultIndex={[0]} allowMultiple>
       {questions.map((item, i) => (
         <FAQ question={item} answer={answers[i]} />

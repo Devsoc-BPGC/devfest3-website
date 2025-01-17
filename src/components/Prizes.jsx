@@ -1,18 +1,22 @@
 import { Container, Flex, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import hex from "./hexVector.svg"; 
 
 const WinnerCard = (props) => {
   return (
     <Container
-      bgColor={"rgba(256,256,256,0.15)"}
       borderRadius={"16px"}
-      backdropFilter={"blur(1px)"}
-      height={"80%"}
+      height={"auto"} 
+      minHeight={"200px"} 
       width={{ base: "50%", sm: "25%", lg: "20%" }}
       textAlign={"center"}
       m={"1%"}
-      p={"1%"}
+      p={"5%"} 
+      backgroundImage={`url(${hex})`} 
+      backgroundSize={"contain"} 
+      backgroundPosition={"center"} 
+      backgroundRepeat={"no-repeat"} 
     >
-      <Text fontFamily={"Epilogue"} fontWeight={800} color={"white"} fontSize={"xl"} paddingBottom={"2%"}>
+      <Text fontFamily={"sarpanch"} fontWeight={800} color={"white"} fontSize={"xl"} paddingBottom={"2%"}>
         {props.title}
       </Text>
       <Text color={"white"} textAlign={"left"}>
@@ -26,15 +30,16 @@ const WinnerCard = (props) => {
   );
 };
 
+
 const HackathonPrizes = () => {
   return (
     <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
-      <Text fontFamily={"Sarpanch"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
+      <Text fontFamily={"Sarpanch"} fontWeight={600} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
         Hackathon Prizes
       </Text>
       <Flex flex={2} width={"100%"} direction={"column"}>
         <Flex width={"100%"} height={"100%"} fontFamily={"Sarpanch"} justifyContent={"space-around"} alignItems={"center"} direction={{ base: "column", sm: "row" }}>
-          <WinnerCard title="Winner" prizes={["Cash Prize of ₹50,000"]} />
+          <WinnerCard title="Winner" prizes={["Cash Prize of ₹50,000"]}  />
           <WinnerCard title="First Runner Up" prizes={["Cash Prize of ₹30,000"]} />
           <WinnerCard title="Second Runner Up" prizes={["Cash Prize of ₹20,000"]} />
         </Flex>
@@ -51,7 +56,7 @@ const HackathonPrizes = () => {
 const GameJamPrizes = () => {
   return (
     <Flex direction={"column"} flex={2} width={"100%"} alignItems={"center"} marginTop={"3%"}>
-      <Text fontFamily={"Sarpanch"} fontWeight={800} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
+      <Text fontFamily={"Sarpanch"} fontWeight={600} color={"white"} fontSize={"6xl"} marginBottom={"1%"}>
         GameJam Prizes
       </Text>
       <Flex flex={2} width={"100%"} direction={"column"}>

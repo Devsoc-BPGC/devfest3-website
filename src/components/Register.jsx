@@ -1,38 +1,40 @@
-import { Card, Flex, Image, Text, Button } from "@chakra-ui/react";
-import hackathon_img from "./Hackathon.jpg";
-import rectangle from "./register here button.png";
+import { Card, Flex, Image } from "@chakra-ui/react";
+import hackathon_img from "./hackathonimg.png";
 
 const Register = () => {
   return (
     <Card
-      direction={{ base: "column", xl: "row-reverse" }}
-      backgroundColor={"white"}
-      opacity={"80%"}
-      width={{ base: "80%", md: "60%" }}
-      height={"35%"}
-      borderRadius={"30px"}
-      alignItems={"center"}
-      justifyContent={"space-between"}
-      marginTop={"3%"}
+      direction={{ base: "column", xl: "row" }}
+      backgroundColor="transparent"
+      opacity="0.8"
+      width="100%"
+      height={{ base: "auto", lg: "35%" }}
+      alignItems="center"
+      justifyContent="space-between"
+      marginTop="3%"
     >
-      <Image objectFit={"cover"} height={{ base: "100px", sm: "150px", lg: "200px" }} src={hackathon_img} p={"2%"} />
-      <Flex direction={"column"} justifyContent={"center"} height={"100%"}>
-        <Text fontSize={{ base: "lg", md: "xl", xl: "2xl" }} p={"3%"} fontWeight={800} maxW={"80%"} paddingLeft={"10%"} fontFamily={"Sarpanch"}>
-          Register for the workshops and the hackathon
-        </Text>
-        <Flex alignItems={"center"} justifyContent={"center"} height={"40%"} width={"100%"}>
-          <Button
-            _hover={{ width: "45%" }}
-            _active={""}
-            backgroundImage={rectangle}
-            backgroundRepeat={"no-repeat"}
-            backgroundPosition={"center"}
-            backgroundSize={"contain"}
-            bgColor={"rgba(0,0,0,0)"}
-            width={"40%"}
-            height={"100%"}
-          />
-        </Flex>
+      <Image
+        src={hackathon_img}
+        alt="Hackathon Button"
+        objectFit="cover"
+        height={{ base: "3.5rem", md: "5.5rem", lg: "6.5rem", xl: "8.5rem" }} 
+        width="auto"
+        cursor="pointer"
+        _hover={{ scale: "1.2" }}
+        onClick={() => {
+          window.location.href = "https://formidium-devfest-goa.devfolio.co/";
+        }}
+        borderRadius="15px"
+      />
+
+      <Flex
+        direction="column"
+        justifyContent="center"
+        alignItems="flex-start"
+        height="100%"
+        flex="1"
+        paddingLeft="2rem"
+      >
       </Flex>
     </Card>
   );

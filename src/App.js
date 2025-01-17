@@ -1,10 +1,11 @@
 import { ChakraProvider, Flex, Image, Wrap, WrapItem, Divider, IconButton, Button, Text, Link } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 // import devfest from "./DEVF3ST.png";
-import devfest40 from "./components/devfest40.png";
+import devfest40 from "./components/devfestlogo.svg";
 import formidium from "./components/formidium.png";
 import locvector from "./components/locvector.png";
 import logo from "./components/devsocbwlogo.png"
+import gradient from "./components/Rectanglegradient.png"
 
 // import { motion } from "framer-motion";
 // import ParticleAnimation from "./components/ParticleAnimation";
@@ -25,6 +26,7 @@ import Cordinators from "./components/Cordinators";
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 // import starbg from '../src/StarBg.png'
 import bg from "./components/bg.png";
+import hackathon_img from "./components/hackathonimg.png";
 
 import './App.css';
 
@@ -80,7 +82,9 @@ function App() {
         <Flex width={"100%"} justifyContent={"center"}>
           <Divider borderColor={"#0F9F96"} m={"5%"} width={"90%"} borderRadius={"4px"} borderBottomWidth={"2px"} opacity={1} />
         </Flex>
-        <Flex alignItems={"center"} justifyContent={"space-evenly"} direction={"column"} ref={prizesRef}>
+        <Flex w={"100%"} justifyContent={"space-between"} direction={"column"} mt={10}>
+          {/* <Image src={hackathon_img} alt={"hackathon img"} width={{ base: "100%", md: "80%", lg: "60%" }} /> */}
+
           <Register />
           <Prizes />
         </Flex>
