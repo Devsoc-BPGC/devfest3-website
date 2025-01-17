@@ -1,4 +1,4 @@
-import { Wrap, WrapItem, Text, Flex, Image, useMediaQuery,Link } from "@chakra-ui/react";
+import { Wrap, WrapItem, Text, Flex, Image, useMediaQuery,Link ,Box} from "@chakra-ui/react";
 import sneh from "./sneh_prakash.png";
 import divyansh from "./divyansh.png";
 import abheshek from "./abheshek.png";
@@ -8,6 +8,7 @@ import sanchay from "./sanchay.png";
 import ronan from "./ronan.png";
 import React from "react";
 import devfesttextbg from "./DEVFEST.png";
+import gradient from "./Rectanglegradient.png"
 function CordiCard({ img, name, position,link }) {
   return (
     <Link
@@ -41,9 +42,30 @@ function Cordinators() {
   return (
     <>
       <Flex width={"100%"} direction={"column"} alignItems={"center"} p={"2%"} paddingTop={0}>
-        <Text fontFamily={"Sarpanch"} fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} color={"white"} width={"100%"} paddingBottom={"2rem"}>
+      <Box
+        width="100%"
+        height="100%"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        backgroundImage={gradient}
+        backgroundSize="auto 100%"
+        backgroundPosition="left center"
+        backgroundRepeat="no-repeat"
+        marginBottom={"2rem"}
+      >
+        <Text
+          padding="20px"
+          width="100%"
+          textAlign="start"
+          
+          textColor="white"
+          fontSize={{ base: "2rem", md: "2.5rem", lg: "3rem", xl: "3.5rem" }}
+          fontFamily="Sarpanch"
+        >
           Coordinators
         </Text>
+      </Box>
         <Wrap fontFamily={"Sarpanch"} spacing={"5rem"} justify={"center"} backgroundImage={isLargerThan1500 ? devfesttextbg : ""} backgroundRepeat={"no-repeat"} backgroundPosition={"center"}>
           <WrapItem height={{ md: "21rem", base: "13rem" }} width={{ md: "20rem", base: "12rem" }}>
             <CordiCard name="Sneh Prakash" position="CHIEF COORDINATOR" img={sneh} link="https://in.linkedin.com/in/sneh-prakash-75a37a218"/>

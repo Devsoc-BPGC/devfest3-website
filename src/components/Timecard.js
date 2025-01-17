@@ -1,24 +1,35 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-function Timecard(props) {
+
+function Timecard({ events }) {
   return (
-    <Box display="flex" flexDir="row" width="100%" marginBottom="5rem" paddingLeft={"3%"} height={"100%"}>
-      <Box display="flex" flexDir="column" height="100%" width="100%" justifyContent="space-between" alignItems="center">
-        {props.events.map((item, index) => {
-          return (
-            <Box margin="5px" key={index} height={{ base: "2rem", md: "3.25rem", lg: "4rem", xl: "5rem", "2xl": "6rem" }} width="80%" display="flex" alignItems="center" fontFamily={"ROGFont"}>
-              <Text
-                fontFamily={"ROGFont"}
-                textColor="white"
-                fontSize={{ base: "1rem", md: "1.5rem", lg: "2rem", xl: "2.5rem", "2xl": "3rem" }}
-                lineHeight={{ base: "1rem", md: "1.5rem", lg: "2rem", xl: "2.5rem", "2xl": "3rem" }}
-              >
-                {item.time} {item.venue ? `| ${item.venue}` : ""}
-              </Text>
-            </Box>
-          );
-        })}
-      </Box>
+    <Box display="flex" flexDir="column" alignItems="center" gap="1rem">
+      {events.map((item, index) => (
+        <Box
+          key={index}
+          width="100%"
+          padding="1rem"
+          border="5px solid #6E44FF"
+          bgColor={"transparent"}
+          borderRadius="8px"
+          textAlign="center"
+        >
+          <Text
+            textColor="white"
+            fontSize={{ base: "1rem", md: "1.2rem", lg: "1.5rem" }}
+            fontFamily="Sarpanch"
+          >
+            {item.name}
+          </Text>
+          <Text
+            textColor="gray.400"
+            fontSize={{ base: "0.8rem", md: "1rem" }}
+            fontFamily="Sarpanch"
+          >
+            {item.time} {item.venue ? `| ${item.venue}` : ""}
+          </Text>
+        </Box>
+      ))}
     </Box>
   );
 }

@@ -1,11 +1,33 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text,Box } from "@chakra-ui/react";
+import gradient from "../components/Rectanglegradient.png";
+
 
 const About = () => {
   return (
     <Flex direction={"column"} width={"100%"} p={"2%"} paddingTop={0}>
-      <Text fontFamily={"Sarpanch"} fontSize={{ base: "3rem", md: "3.5rem", lg: "4rem", xl: "4.5rem", "2xl": "5em" }} color={"white"} width={"100%"}>
-        ABOUT
-      </Text>
+      <Box
+        width="100%"
+        height="100%"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        backgroundImage={gradient}
+        backgroundSize="auto 100%"
+        backgroundPosition="left center"
+        marginBottom={"2rem"}
+        backgroundRepeat="no-repeat"
+      >
+        <Text
+          padding="20px"
+          width="100%"
+          textAlign="start"
+          textColor="white"
+          fontSize={{ base: "2rem", md: "2.5rem", lg: "3rem", xl: "3.5rem" }}
+          fontFamily="Sarpanch"
+        >
+          ABOUT 
+        </Text>
+      </Box>
       <Flex justifyContent={"space-evenly"} width={"100%"}>
         <Flex width={"50%"} p={"5%"} paddingLeft={"0%"}>
           <Text color={"white"} fontFamily={"Sarpanch"} fontSize={{ base: "xs", md: "sm", xl: "xl" }}>

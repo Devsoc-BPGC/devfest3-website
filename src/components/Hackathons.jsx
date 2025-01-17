@@ -22,7 +22,7 @@ const Hackathons = () => {
 
   return (
     <ChakraProvider>
-      <Flex bgColor={"black"} color={"white"} width={"100%"} direction={"column"} bgImg={bg} bgPosition={"top"} bgSize={"contain"}>
+      <Flex bgColor={"black"} color={"white"}  width={"100%"} direction={"column"} bgImg={bg}  bgSize={''} fontFamily={"sarpanch"}>
         <NavBar aboutRef={aboutRef} eventsRef={eventsRef} timelineRef={timelineRef} prizesRef={prizesRef} sponsorsRef={sponsorsRef} teamRef={teamRef} faqRef={faqRef} />
 
         <Flex direction={"column"} align={"center"} justify={"center"} w={"100%"} height={{ base: "50vh", lg: "80vh" }}>
